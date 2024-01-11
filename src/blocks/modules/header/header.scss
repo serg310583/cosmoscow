@@ -1,0 +1,25 @@
+.header {
+  display: flex;
+  width: 1280px;
+  height: 100px;
+  padding: 0px 90px 0px 60px;
+  align-items: center;
+  flex-shrink: 0;
+  background: $bg-color-light;
+  &__navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    &__item {
+      //   display: block;
+      a {
+        color: $text-color-secondary;
+        font-size: 18px;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
