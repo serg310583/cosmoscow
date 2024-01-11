@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Helvetica World';
+  src: url('../../fonts/HelveticaWorld/HelveticaWorld-Regular.eot');
+  src: url('../../fonts/HelveticaWorld/HelveticaWorld-Regular.eot')
+      format('embedded-opentype'),
+    url('../../fonts/HelveticaWorld/HelveticaWorld-Regular.woff2')
+      format('woff2'),
+    url('../../fonts/HelveticaWorld/HelveticaWorld-Regular.woff') format('woff'),
+    url('../../fonts/HelveticaWorld/HelveticaWorld-Regular.ttf')
+      format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica World';
+  src: url('../../fonts/HelveticaWorld/HelveticaWorld-Italic.eot');
+  src: url('../../fonts/HelveticaWorld/HelveticaWorld-Italic.eot')
+      format('embedded-opentype'),
+    url('../../fonts/HelveticaWorld/HelveticaWorld-Italic.woff2')
+      format('woff2'),
+    url('../../fonts/HelveticaWorld/HelveticaWorld-Italic.woff') format('woff'),
+    url('../../fonts/HelveticaWorld/HelveticaWorld-Italic.ttf')
+      format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Albina';
+  src: url('../../fonts/Albina/Albina-regular.TTF');
+  src: url('../../fonts/Albina/Albina-regular.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
