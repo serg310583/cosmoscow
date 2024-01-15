@@ -1,0 +1,54 @@
+.footer {
+  position: relative;
+  .promo__picture {
+    position: absolute;
+    z-index: 2;
+    width: 1280px;
+    height: 796px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    .img_plus,
+    .img_minus {
+      position: absolute;
+      z-index: 3;
+      top: -216px;
+      left: 450px;
+      object-fit: cover;
+    }
+
+    .minus,
+    .plus {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      z-index: 4;
+      top: -10px;
+      right: 30px;
+      cursor: pointer;
+    }
+
+    &:hover {
+      .img_plus,
+      .plus {
+        display: none;
+      }
+
+      .img_minus,
+      .minus {
+        display: inline-block;
+      }
+    }
+
+    .plus,
+    .img_plus {
+      display: inline-block;
+      opacity: 1; /* Изначально показываем плюс и изображение с классом .promo_img_plus */
+    }
+
+    .minus,
+    .img_minus {
+      display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
+    }
+  }
+}
