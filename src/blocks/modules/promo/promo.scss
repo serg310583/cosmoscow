@@ -4,7 +4,7 @@
     position: absolute;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 1280px;
     height: 50px;
     &.up {
       top: -25px;
@@ -30,21 +30,26 @@
         width: 460px;
         height: 157px;
         margin-left: 6px;
-        padding-bottom: 24px;
+        margin-bottom: 24px;
         color: $text-color-light;
         text-transform: uppercase;
         font-size: 44px;
       }
       p {
         width: 460px;
+        margin-bottom: -15px;
         font-size: 18px;
-        padding-bottom: 24px;
         color: $text-color-light;
       }
       .artObject {
         object-fit: cover;
         width: 390px;
         height: 390px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
       }
     }
     &__right {
@@ -65,7 +70,7 @@
 }
 .promo__picture {
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   width: 1280px;
   height: 796px;
   position: absolute;
@@ -74,42 +79,48 @@
   .img_plus,
   .img_minus {
     position: absolute;
-    z-index: 3;
+    z-index: 2;
     top: -216px;
     left: 450px;
     object-fit: cover;
   }
-  .plus,
-  .minus {
+
+  .minus,
+  .plus {
     width: 100px;
     height: 100px;
     position: absolute;
-    z-index: 4;
     top: -10px;
     right: 30px;
     cursor: pointer;
   }
+
   .plus {
     &:hover {
-      .img_plus {
+      ~ .img_plus,
+      ~ .plus {
         display: none;
-        opacity: 0; /* При наведении скрываем плюс и изображение с классом .promo_img_plus */
       }
 
-      .img_minus {
-        display: inline-block; /* При наведении показываем минус и изображение с классом .promo_img_minus */
-        opacity: 1; /* При наведении плавно отображаем минус и изображение с классом .promo_img_minus */
+      ~ .img_minus,
+      ~ .minus {
+        display: inline-block;
       }
     }
   }
 
-  .plus,
+  .plus {
+    display: inline-block;
+    z-index: 3;
+  }
   .img_plus {
     display: inline-block;
-    opacity: 1; /* Изначально показываем плюс и изображение с классом .promo_img_plus */
   }
 
-  .minus,
+  .minus {
+    display: none;
+    z-index: 3;
+  }
   .img_minus {
     display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
   }

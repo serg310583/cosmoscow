@@ -27,16 +27,17 @@
       right: 30px;
       cursor: pointer;
     }
+    .plus {
+      &:hover {
+        ~ .img_plus,
+        ~ .plus {
+          display: none;
+        }
 
-    &:hover {
-      .img_plus,
-      .plus {
-        display: none;
-      }
-
-      .img_minus,
-      .minus {
-        display: inline-block;
+        ~ .img_minus,
+        ~ .minus {
+          display: inline-block;
+        }
       }
     }
 

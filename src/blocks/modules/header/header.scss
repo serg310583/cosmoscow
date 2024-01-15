@@ -1,9 +1,12 @@
 .header {
   display: flex;
+  margin: 0 auto;
   height: 100px;
+
+  padding-left: 60px;
   align-items: center;
-  flex-shrink: 0;
   background: $bg-color-light;
+
   &__navigation {
     display: flex;
     width: 100%;
