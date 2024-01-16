@@ -5,12 +5,12 @@
     display: flex;
     justify-content: center;
     width: 1280px;
-    height: 50px;
+    height: 36px;
     &.up {
-      top: -25px;
+      top: -24px;
     }
     &.down {
-      bottom: -25px;
+      bottom: -24px;
     }
   }
 
@@ -73,15 +73,14 @@
   z-index: 1;
   width: 1280px;
   height: 796px;
-  position: absolute;
   top: 0px;
   left: 0px;
-  .img_plus,
-  .img_minus {
+  .img_plus_desctop,
+  .img_minus_desctop {
     position: absolute;
     z-index: 2;
     top: -216px;
-    left: 450px;
+    left: 418px;
     object-fit: cover;
   }
 
@@ -94,15 +93,19 @@
     right: 30px;
     cursor: pointer;
   }
+  .img_minus_tablet,
+  .img_plus_tablet {
+    display: none;
+  }
 
   .plus {
     &:hover {
-      ~ .img_plus,
+      ~ .img_plus_desctop,
       ~ .plus {
         display: none;
       }
 
-      ~ .img_minus,
+      ~ .img_minus_desctop,
       ~ .minus {
         display: inline-block;
       }
@@ -113,7 +116,7 @@
     display: inline-block;
     z-index: 3;
   }
-  .img_plus {
+  .img_plus_desctop {
     display: inline-block;
   }
 
@@ -121,7 +124,7 @@
     display: none;
     z-index: 3;
   }
-  .img_minus {
+  .img_minus_desctop {
     display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
   }
 }

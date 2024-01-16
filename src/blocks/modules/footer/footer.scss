@@ -1,55 +1,82 @@
-.footer {
-  position: relative;
-  .promo__picture {
-    position: absolute;
-    z-index: 2;
-    width: 1280px;
-    height: 796px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    .img_plus,
-    .img_minus {
-      position: absolute;
-      z-index: 3;
-      top: -216px;
-      left: 450px;
-      object-fit: cover;
-    }
+// .footer {
+//   .promo__picture {
+//     position: relative;
+//     display: flex;
+//     justify-content: flex-end;
+//     z-index: 1;
+//     width: 768px;
+//     height: 796px;
 
-    .minus,
-    .plus {
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      z-index: 4;
-      top: -10px;
-      right: 30px;
-      cursor: pointer;
-    }
-    .plus {
-      &:hover {
-        ~ .img_plus,
-        ~ .plus {
-          display: none;
-        }
+//     .wrapper {
+//       position: relative;
+//       border: 1px solid red;
+//       width: 384px;
+//       height: 796px;
+//       overflow: hidden;
 
-        ~ .img_minus,
-        ~ .minus {
-          display: inline-block;
-        }
-      }
-    }
+//       .img_plus,
+//       .img_minus {
+//         position: absolute;
+//         z-index: 2;
+//         transform: rotate(45deg);
+//         // width: 384px;
+//         // height: 796px;
+//         top: 0px;
+//         left: 0px;
 
-    .plus,
-    .img_plus {
-      display: inline-block;
-      opacity: 1; /* Изначально показываем плюс и изображение с классом .promo_img_plus */
-    }
+//         // object-fit: cover;
+//       }
+//     }
 
-    .minus,
-    .img_minus {
-      display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
-    }
-  }
-}
+//     .minus,
+//     .plus {
+//       width: 100px;
+//       height: 100px;
+//       position: absolute;
+//       top: -10px;
+//       right: 30px;
+//       cursor: pointer;
+//     }
+
+//     .plus {
+//       &:hover {
+//         ~ .wrapper {
+//           .img_plus {
+//             display: none;
+//           }
+//         }
+//         ~ .plus {
+//           display: none;
+//         }
+//         ~ .wrapper {
+//           .img_minus {
+//             display: inline-block;
+//           }
+//         }
+//         ~ .minus {
+//           display: inline-block;
+//         }
+//       }
+//     }
+
+//     .plus {
+//       display: inline-block;
+//       z-index: 3;
+//     }
+//     .wrapper {
+//       .img_plus {
+//         display: inline-block;
+//       }
+//     }
+
+//     .minus {
+//       display: none;
+//       z-index: 3;
+//     }
+//     .wrapper {
+//       .img_minus {
+//         display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
+//       }
+//     }
+//   }
+// }
