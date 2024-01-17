@@ -13,10 +13,13 @@
           width: 340px;
           font-size: 36px;
         }
-        p {
+        .promo_text {
           width: 340px;
           font-size: 16px;
           padding-bottom: 118px;
+        }
+        .promo_text_mobile {
+          display: none;
         }
         .artObject {
           width: 350px;
@@ -36,7 +39,9 @@
     overflow-x: clip;
     width: 768px;
     .img_minus_desctop,
-    .img_plus_desctop {
+    .img_plus_desctop,
+    .img_plus_mobile,
+    .img_minus_mobile {
       display: none;
     }
     .img_plus_tablet,
@@ -74,4 +79,103 @@
 }
 
 @media (max-width: 375px) {
+  .promo {
+    .streak {
+      width: 375px;
+      &.down {
+        display: none;
+      }
+    }
+    &__content {
+      position: relative;
+      max-width: 260px;
+      min-height: 668px;
+      padding-left: 28px;
+      &__left {
+        width: 340px;
+        height: 668px;
+        // z-index: 5;
+        h1 {
+          width: 250px;
+          font-size: 32px;
+          margin-bottom: 300px;
+        }
+        .promo_text {
+          display: none;
+        }
+        .promo_text_mobile {
+          display: inline-block;
+          width: 320px;
+          font-size: 14px;
+          color: $text-color-light;
+          padding-bottom: 0px;
+        }
+        .artObject {
+          display: none;
+        }
+        .artObject_mobile {
+          display: inline-block;
+          // width: 375px;
+          // background-color: $bg-color-dark;
+          img {
+            margin-top: -37px;
+            margin-left: 25px;
+          }
+        }
+      }
+      &__right {
+        position: absolute;
+        top: 330px;
+        left: 260px;
+        width: 113px;
+        background-color: $bg-color-dark;
+        z-index: -1;
+
+        .avtograf {
+          display: none;
+        }
+      }
+    }
+  }
+  .promo__picture {
+    overflow-x: clip;
+    width: 375px;
+    .img_minus_desctop,
+    .img_plus_desctop,
+    .img_plus_tablet,
+    .img_minus_tablet {
+      display: none;
+    }
+    .img_plus_mobile,
+    .img_minus_mobile {
+      position: absolute;
+      top: 57px;
+      left: -30px;
+      z-index: 2;
+    }
+    .minus,
+    .plus {
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      top: 90px;
+      right: 34px;
+      cursor: pointer;
+    }
+    .plus {
+      &:hover {
+        ~ .img_plus_mobile ~ .plus {
+          display: none;
+        }
+
+        ~ .img_minus_mobile,
+        ~ .minus {
+          display: inline-block;
+        }
+      }
+    }
+    .img_plus_mobile {
+      display: inline-block;
+    }
+  }
 }

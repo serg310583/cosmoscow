@@ -35,11 +35,14 @@
         text-transform: uppercase;
         font-size: 44px;
       }
-      p {
+      .promo_text {
         width: 460px;
         margin-bottom: -15px;
         font-size: 18px;
         color: $text-color-light;
+      }
+      .promo_text_mobile {
+        display: none;
       }
       .artObject {
         object-fit: cover;
@@ -50,6 +53,9 @@
           height: 100%;
           object-fit: cover;
         }
+      }
+      .artObject_mobile {
+        display: none;
       }
     }
     &__right {
@@ -94,7 +100,9 @@
     cursor: pointer;
   }
   .img_minus_tablet,
-  .img_plus_tablet {
+  .img_plus_tablet,
+  .img_minus_mobile,
+  .img_plus_mobile {
     display: none;
   }
 
