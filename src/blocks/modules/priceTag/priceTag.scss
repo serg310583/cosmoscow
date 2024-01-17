@@ -8,35 +8,47 @@
   }
   &__content {
     display: flex;
-    gap: 200px;
+
     &__left {
       width: 500px;
       .priceTag_text {
+        background: url(../../../img/desctop/bg/bg2.png) no-repeat;
+        background-position: bottom -7px right -7px;
         font-size: 18px;
         font-style: italic;
+        span {
+          color: $text-color-light;
+        }
       }
     }
     &__right {
-      display: flex;
-      flex-direction: column;
-      padding-top: 96px;
-      width: 255px;
-      gap: 36px;
-      &__item {
-        .item_number {
-          span {
-            font-size: 12px;
+      width: 700px;
+      padding-left: 200px;
+      background: url(../../../img/desctop/bg/bg2-1.png) no-repeat;
+      background-position: top -70px left 12px;
+      &__wrapper {
+        display: flex;
+        flex-direction: column;
+
+        padding-top: 96px;
+        width: 255px;
+        gap: 36px;
+        &__item {
+          .item_number {
+            span {
+              font-size: 12px;
+            }
+            font-size: 44px;
           }
-          font-size: 44px;
+          .item_text {
+            font-size: 18px;
+          }
         }
-        .item_text {
+        .autograf {
+          padding-top: 334px;
           font-size: 18px;
+          font-style: italic;
         }
-      }
-      .autograf {
-        padding-top: 334px;
-        font-size: 18px;
-        font-style: italic;
       }
     }
   }
