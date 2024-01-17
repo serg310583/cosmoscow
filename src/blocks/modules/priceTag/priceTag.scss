@@ -1,0 +1,105 @@
+.priceTag {
+  position: relative;
+  padding-top: 203px;
+  padding-left: 60px;
+  &__title {
+    font-size: 44px;
+    padding-bottom: 24px;
+  }
+  &__content {
+    display: flex;
+    gap: 200px;
+    &__left {
+      width: 500px;
+      .priceTag_text {
+        font-size: 18px;
+        font-style: italic;
+      }
+    }
+    &__right {
+      display: flex;
+      flex-direction: column;
+      padding-top: 96px;
+      width: 255px;
+      gap: 36px;
+      &__item {
+        .item_number {
+          span {
+            font-size: 12px;
+          }
+          font-size: 44px;
+        }
+        .item_text {
+          font-size: 18px;
+        }
+      }
+      .autograf {
+        padding-top: 334px;
+        font-size: 18px;
+        font-style: italic;
+      }
+    }
+  }
+  .priceTag_picture {
+    position: absolute;
+    z-index: 1;
+    width: 1280px;
+    height: 796px;
+    top: 900px;
+    left: 0px;
+    .img_plus_desctop,
+    .img_minus_desctop {
+      position: absolute;
+      z-index: 2;
+      top: -285px;
+      left: -235px;
+      object-fit: cover;
+    }
+
+    .minus,
+    .plus {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: 120px;
+      left: 440px;
+      cursor: pointer;
+    }
+    .img_minus_tablet,
+    .img_plus_tablet,
+    .img_minus_mobile,
+    .img_plus_mobile {
+      display: none;
+    }
+
+    .plus {
+      &:hover {
+        ~ .img_plus_desctop,
+        ~ .plus {
+          display: none;
+        }
+
+        ~ .img_minus_desctop,
+        ~ .minus {
+          display: inline-block;
+        }
+      }
+    }
+
+    .plus {
+      display: inline-block;
+      z-index: 3;
+    }
+    .img_plus_desctop {
+      display: inline-block;
+    }
+
+    .minus {
+      display: none;
+      z-index: 3;
+    }
+    .img_minus_desctop {
+      display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
+    }
+  }
+}
