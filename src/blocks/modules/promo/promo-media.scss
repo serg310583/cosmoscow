@@ -80,8 +80,10 @@
 
 @media (max-width: 375px) {
   .promo {
+    height: 865px;
     .streak {
       width: 375px;
+
       &.down {
         display: none;
       }

@@ -20,6 +20,9 @@
           color: $text-color-light;
         }
       }
+      .priceTag_text-mobile {
+        display: none;
+      }
     }
     &__right {
       width: 700px;

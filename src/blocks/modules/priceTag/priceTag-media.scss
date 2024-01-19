@@ -1,0 +1,210 @@
+@media (max-width: 768px) {
+  .priceTag {
+    padding-top: 160px;
+    padding-left: 34px;
+    padding-right: 34px;
+    &__title {
+      font-size: 36px;
+      position: relative;
+      z-index: -1;
+    }
+    &__content {
+      position: relative;
+      &__left {
+        width: 340px;
+        .priceTag_text {
+          background: url(../../../img/tablet/bg/bg2.png) no-repeat;
+          background-position: bottom -7px right 9px;
+          font-size: 16px;
+
+          span {
+            color: $text-color-light;
+          }
+        }
+      }
+      &__right {
+        position: absolute;
+        top: -55px;
+        right: 0px;
+        width: 335px;
+        padding-left: 86px;
+        background: url(../../../img/tablet/bg/bg2-1.png) no-repeat;
+        background-position: top -20px left 60px;
+        &__wrapper {
+          width: 200px;
+          padding-top: 75px;
+          gap: 24px;
+          &__item {
+            .item_number {
+              font-size: 36px;
+            }
+            .item_text {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+    .priceTag_picture {
+      overflow-x: clip;
+      width: 768px;
+      top: 625px;
+      .img_minus_desctop,
+      .img_plus_desctop,
+      .img_plus_mobile,
+      .img_minus_mobile {
+        display: none;
+      }
+      .img_plus_tablet,
+      .img_minus_tablet {
+        position: absolute;
+        top: 0px;
+        left: -300px;
+        z-index: 2;
+      }
+      .minus,
+      .plus {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 671px;
+        left: 475px;
+        cursor: pointer;
+      }
+      .plus {
+        &:hover {
+          ~ .img_minus_desctop,
+          ~ .img_plus_tablet,
+          ~ .plus {
+            display: none;
+          }
+
+          ~ .img_minus_tablet,
+          ~ .minus {
+            display: inline-block;
+          }
+        }
+      }
+      .img_plus_tablet {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .priceTag {
+    padding-top: 97px;
+    padding-left: 10px;
+    padding-right: 22px;
+    &__title {
+      font-size: 32px;
+      z-index: 1;
+      padding-left: 18px;
+    }
+    &__content {
+      position: relative;
+      flex-direction: column;
+      width: 375px;
+      &__left {
+        order: 2;
+        width: 345px;
+        padding-left: 17px;
+        margin-top: -20px;
+        .priceTag_text {
+          display: none;
+
+          span {
+            color: $text-color-light;
+          }
+        }
+        .priceTag_text-mobile {
+          font-size: 14px;
+          display: inline-block;
+          font-style: italic;
+          background: url(../../../img/mobile/bg/bg2.png) no-repeat;
+          background-position: top 35px left 0px;
+          span {
+            color: $text-color-light;
+          }
+        }
+      }
+      &__right {
+        order: 1;
+        position: relative;
+        padding-left: 28px;
+        top: -58px;
+        width: 343px;
+        background: url(../../../img/mobile/bg/bg2-1.png) no-repeat;
+        background-position: top -33px left 12px;
+        &__wrapper {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          width: 316px;
+          height: 300px;
+          padding-top: 60px;
+          gap: 20px;
+          &__item {
+            width: 150px;
+            .item_number {
+              font-size: 24px;
+            }
+            .item_text {
+              font-size: 14px;
+            }
+          }
+          .autograf {
+            display: none;
+          }
+        }
+      }
+    }
+    .priceTag_picture {
+      overflow-x: clip;
+      width: 375px;
+      height: 440px;
+      top: 600px;
+      .img_minus_desctop,
+      .img_plus_desctop,
+      .img_plus_tablet,
+      .img_minus_tablet {
+        display: none;
+      }
+      .img_plus_mobile,
+      .img_minus_mobile {
+        position: absolute;
+        top: 30px;
+        left: -95px;
+        z-index: 2;
+      }
+      .minus,
+      .plus {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 380px;
+        left: 290px;
+        cursor: pointer;
+      }
+      .plus {
+        &:hover {
+          ~ .img_minus_desctop,
+          ~ .img_minus_tablet,
+          ~ .img_plus_mobile,
+          ~ .plus {
+            display: none;
+          }
+
+          ~ .img_minus_mobile,
+          ~ .minus {
+            display: inline-block;
+          }
+        }
+      }
+      .img_plus_mobile {
+        display: inline-block;
+      }
+    }
+  }
+}
