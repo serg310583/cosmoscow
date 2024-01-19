@@ -180,6 +180,11 @@
       }
       .minus,
       .plus {
+        display: none;
+      }
+      .minusM,
+      .plusM {
+        z-index: 9;
         width: 50px;
         height: 50px;
         position: absolute;
@@ -187,23 +192,8 @@
         left: 290px;
         cursor: pointer;
       }
-      .plus {
-        &:hover {
-          ~ .img_minus_desctop,
-          ~ .img_minus_tablet,
-          ~ .img_plus_mobile,
-          ~ .plus {
-            display: none;
-          }
-
-          ~ .img_minus_mobile,
-          ~ .minus {
-            display: inline-block;
-          }
-        }
-      }
-      .img_plus_mobile {
-        display: inline-block;
+      .active {
+        display: block;
       }
     }
   }

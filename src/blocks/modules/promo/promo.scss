@@ -89,6 +89,10 @@
     left: 418px;
     object-fit: cover;
   }
+  .plusM,
+  .minusM {
+    display: none;
+  }
 
   .minus,
   .plus {
@@ -133,6 +137,6 @@
     z-index: 3;
   }
   .img_minus_desctop {
-    display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
+    display: none;
   }
 }

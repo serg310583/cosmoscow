@@ -38,15 +38,27 @@
     <img src="img\desctop\bg\Mask.webp" alt="streak" />
   </div>
 
-  <div class="promo__picture">
-    <svg class="plus">
+  <div class="promo__picture button-container">
+    <!-- button desctop & tablet -->
+    <svg class="plus" role="button" id="buttonPlus">
       <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
     </svg>
 
-    <svg class="minus">
+    <svg class="minus" role="button" id="buttonMinus">
       <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
     </svg>
-    <!-- desctop -->
+
+    <!-- button mobile -->
+
+    <svg class="plusM active" role="button">
+      <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+    </svg>
+
+    <svg class="minusM" role="button" id="buttonMinusM">
+      <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+    </svg>
+
+    <!-- image desctop -->
     <img
       class="img_plus_desctop"
       src="img\desctop\redked\redked 1.webp"
@@ -57,7 +69,8 @@
       src="img\desctop\redked\redked 1(1).webp"
       alt="redked"
     />
-    <!-- tablet -->
+
+    <!-- image tablet -->
     <img
       class="img_plus_tablet"
       src="img\tablet\redked\redked 1.webp"
@@ -68,14 +81,17 @@
       src="img\tablet\redked\redked 1(1).webp"
       alt="redked"
     />
-    <!-- mobile -->
+
+    <!-- image mobile -->
     <img
       class="img_plus_mobile"
+      id="img_plus_mobile"
       src="img\mobile\redked\redked 1.webp"
       alt="redked"
     />
     <img
       class="img_minus_mobile"
+      id="img_minus_mobile"
       src="img\mobile\redked\redked 1(1).webp"
       alt="redked"
     />
