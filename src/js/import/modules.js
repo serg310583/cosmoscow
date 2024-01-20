@@ -1,1 +1,1 @@
-// import '%modules%/promo/promo';
+import '%modules%/footer/footer';

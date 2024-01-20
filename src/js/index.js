@@ -31,3 +31,30 @@ for (let i = 0; i < buttonContainers.length; i++) {
     imgPlusMobile.style.display = 'block';
   });
 }
+
+// ФУНКЦИОНАЛ СКРЫВАЕМОГО ТЕКСТА
+// Находим все блоки с классом "article__container"
+let textContainers = document.getElementsByClassName('article__container');
+// Перебираем блоки и добавляем обработчики событий
+for (let i = 0; i < textContainers.length; i++) {
+  let textContainer = textContainers[i];
+  // Находим кнопки в текущем блоке
+  let buttonShow = textContainer.querySelector('.show');
+  let buttonHide = textContainer.querySelector('.hide');
+  // Находим текст в текущем блоке
+  let minText = textContainer.querySelector('.minText');
+  let maxText = textContainer.querySelector('.maxText');
+  // Добавляем обработчики событий
+  buttonShow.addEventListener('click', function () {
+    buttonShow.classList.remove('active');
+    buttonHide.classList.add('active');
+    minText.style.display = 'none';
+    maxText.style.display = 'block';
+  });
+  buttonHide.addEventListener('click', function () {
+    buttonHide.classList.remove('active');
+    buttonShow.classList.add('active');
+    minText.style.display = 'block';
+    maxText.style.display = 'none';
+  });
+}

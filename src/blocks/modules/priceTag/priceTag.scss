@@ -121,4 +121,163 @@
       display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
     }
   }
+  &__content2Mobile,
+  &__content3Mobile,
+  &__content4Mobile,
+  &__content5Mobile {
+    display: none;
+  }
+  &__content2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 300px;
+    align-items: center;
+    background: url(../../../img/desctop/bg/bg2-2.png) no-repeat;
+    background-position: top 123px left 716px;
+
+    &__text {
+      width: 584px;
+      padding-left: 14px;
+      padding-right: 14px;
+      margin-bottom: 36px;
+      font-size: 20px;
+      background: url(../../../img/desctop/bg/bg2-3.png) no-repeat;
+      background-position: top 148px left 0px;
+
+      .dB {
+        font-style: italic;
+      }
+      mark {
+        background-color: $bg-color-dark;
+        width: 3px;
+        .text_bg {
+          color: $text-color-light;
+        }
+      }
+    }
+    &__text2 {
+      width: 593px;
+      padding-left: 14px;
+      padding-right: 14px;
+      font-size: 20px;
+      margin-bottom: 36px;
+
+      background: url(../../../img/desctop/bg/bg2-4.png) no-repeat;
+      background-position: top 170px left 0px;
+      .text_bg {
+        color: $text-color-light;
+      }
+      .dB {
+        font-style: italic;
+      }
+    }
+    &__text3 {
+      width: 560px;
+      margin-bottom: 170px;
+      font-size: 20px;
+      background: url(../../../img/desctop/bg/bg2-5.png) no-repeat;
+      background-position: top 238px left 0px;
+      .text_bg {
+        color: $text-color-light;
+      }
+      .dB {
+        font-style: italic;
+      }
+      .divider {
+        display: none;
+      }
+    }
+  }
+  &__content3 {
+    &__text {
+      width: 560px;
+      margin-bottom: 36px;
+      font-size: 20px;
+      .dB {
+        font-style: italic;
+      }
+    }
+    &__text2 {
+      width: 560px;
+      font-size: 20px;
+      .dB {
+        font-style: italic;
+      }
+    }
+  }
+  .priceTag_picture2 {
+    position: absolute;
+    overflow-x: clip;
+    z-index: 1;
+    width: 1280px;
+    height: 796px;
+    top: 2300px;
+    left: 0px;
+    .img_plus_desctop,
+    .img_minus_desctop {
+      position: absolute;
+      z-index: 2;
+      top: 0px;
+      left: 330px;
+      object-fit: cover;
+    }
+    .plusM,
+    .minusM {
+      display: none;
+    }
+
+    .minus,
+    .plus {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      bottom: -80px;
+      left: 410px;
+      cursor: pointer;
+    }
+    .img_minus_tablet,
+    .img_plus_tablet,
+    .img_minus_mobile,
+    .img_plus_mobile {
+      display: none;
+    }
+
+    .plus {
+      &:hover {
+        ~ .img_plus_desctop,
+        ~ .plus {
+          display: none;
+        }
+
+        ~ .img_minus_desctop,
+        ~ .minus {
+          display: inline-block;
+        }
+      }
+    }
+
+    .plus {
+      display: inline-block;
+      z-index: 3;
+    }
+    .img_plus_desctop {
+      display: inline-block;
+    }
+
+    .minus {
+      display: none;
+      z-index: 3;
+    }
+    .img_minus_desctop {
+      display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
+    }
+    .avtograf {
+      position: absolute;
+      font-size: 18px;
+      font-style: italic;
+      top: 355px;
+      left: 760px;
+    }
+  }
 }
