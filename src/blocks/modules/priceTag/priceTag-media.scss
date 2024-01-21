@@ -1,8 +1,10 @@
 @media (max-width: 768px) {
   .priceTag {
+    min-height: 3290px;
     padding-top: 160px;
     padding-left: 34px;
     padding-right: 34px;
+
     &__title {
       font-size: 36px;
       position: relative;
@@ -135,7 +137,8 @@
 
       @include button_tablet;
       .avtograf {
-        display: none;
+        top: 888px;
+        left: 460px;
       }
     }
   }

@@ -44,7 +44,10 @@
   .img_minus_mobile {
     display: none;
   }
-
+  .plusM,
+  .minusM {
+    display: none;
+  }
   .plus {
     &:hover {
       ~ .img_minus_desctop,
