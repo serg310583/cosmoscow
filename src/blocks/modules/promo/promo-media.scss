@@ -38,12 +38,6 @@
   .promo__picture {
     overflow-x: clip;
     width: 768px;
-    .img_minus_desctop,
-    .img_plus_desctop,
-    .img_plus_mobile,
-    .img_minus_mobile {
-      display: none;
-    }
     .img_plus_tablet,
     .img_minus_tablet {
       position: absolute;
@@ -51,7 +45,6 @@
       left: 220px;
       z-index: 2;
     }
-
     .minus,
     .plus {
       width: 80px;
@@ -61,21 +54,7 @@
       right: 30px;
       cursor: pointer;
     }
-    .plus {
-      &:hover {
-        ~ .img_plus_tablet ~ .plus {
-          display: none;
-        }
-
-        ~ .img_minus_tablet,
-        ~ .minus {
-          display: inline-block;
-        }
-      }
-    }
-    .img_plus_tablet {
-      display: inline-block;
-    }
+    @include button_tablet;
   }
 }
 
@@ -143,15 +122,6 @@
   .promo__picture {
     overflow-x: clip;
     width: 375px;
-    .img_minus_desctop,
-    .img_plus_desctop,
-    .img_plus_tablet,
-    .img_minus_tablet {
-      display: none;
-    }
-    .img_plus_mobile {
-      display: inline-block;
-    }
     .img_plus_mobile,
     .img_minus_mobile {
       position: absolute;
@@ -159,23 +129,6 @@
       left: -30px;
       z-index: 2;
     }
-    .plus,
-    .minus {
-      display: none;
-    }
-    .plusM,
-    .minusM {
-      display: none;
-      z-index: 9;
-      width: 50px;
-      height: 50px;
-      position: absolute;
-      top: 90px;
-      right: 34px;
-      cursor: pointer;
-    }
-    .active {
-      display: block;
-    }
+    @include button_mobile;
   }
 }

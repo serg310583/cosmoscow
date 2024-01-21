@@ -1,4 +1,5 @@
 .priceTag {
+  min-height: 3450px;
   position: relative;
   padding-top: 203px;
   padding-left: 60px;
@@ -84,42 +85,7 @@
       left: 440px;
       cursor: pointer;
     }
-    .img_minus_tablet,
-    .img_plus_tablet,
-    .img_minus_mobile,
-    .img_plus_mobile {
-      display: none;
-    }
-
-    .plus {
-      &:hover {
-        ~ .img_plus_desctop,
-        ~ .plus {
-          display: none;
-        }
-
-        ~ .img_minus_desctop,
-        ~ .minus {
-          display: inline-block;
-        }
-      }
-    }
-
-    .plus {
-      display: inline-block;
-      z-index: 3;
-    }
-    .img_plus_desctop {
-      display: inline-block;
-    }
-
-    .minus {
-      display: none;
-      z-index: 3;
-    }
-    .img_minus_desctop {
-      display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
-    }
+    @include button;
   }
   &__content2Mobile,
   &__content3Mobile,
@@ -236,42 +202,7 @@
       left: 410px;
       cursor: pointer;
     }
-    .img_minus_tablet,
-    .img_plus_tablet,
-    .img_minus_mobile,
-    .img_plus_mobile {
-      display: none;
-    }
-
-    .plus {
-      &:hover {
-        ~ .img_plus_desctop,
-        ~ .plus {
-          display: none;
-        }
-
-        ~ .img_minus_desctop,
-        ~ .minus {
-          display: inline-block;
-        }
-      }
-    }
-
-    .plus {
-      display: inline-block;
-      z-index: 3;
-    }
-    .img_plus_desctop {
-      display: inline-block;
-    }
-
-    .minus {
-      display: none;
-      z-index: 3;
-    }
-    .img_minus_desctop {
-      display: none; /* Изначально скрываем минус и изображение с классом .promo_img_minus */
-    }
+    @include button;
     .avtograf {
       position: absolute;
       font-size: 18px;

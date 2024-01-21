@@ -49,12 +49,6 @@
       overflow-x: clip;
       width: 768px;
       top: 625px;
-      .img_minus_desctop,
-      .img_plus_desctop,
-      .img_plus_mobile,
-      .img_minus_mobile {
-        display: none;
-      }
       .img_plus_tablet,
       .img_minus_tablet {
         position: absolute;
@@ -71,23 +65,8 @@
         left: 475px;
         cursor: pointer;
       }
-      .plus {
-        &:hover {
-          ~ .img_minus_desctop,
-          ~ .img_plus_tablet,
-          ~ .plus {
-            display: none;
-          }
 
-          ~ .img_minus_tablet,
-          ~ .minus {
-            display: inline-block;
-          }
-        }
-      }
-      .img_plus_tablet {
-        display: inline-block;
-      }
+      @include button_tablet;
     }
     &__content2 {
       margin-top: 830px;
@@ -136,12 +115,6 @@
       top: 2373px;
       left: 0px;
       width: 768px;
-      .img_minus_desctop,
-      .img_plus_desctop,
-      .img_plus_mobile,
-      .img_minus_mobile {
-        display: none;
-      }
       .img_plus_tablet,
       .img_minus_tablet {
         position: absolute;
@@ -159,21 +132,8 @@
         left: 260px;
         cursor: pointer;
       }
-      .plus {
-        &:hover {
-          ~ .img_plus_tablet ~ .plus {
-            display: none;
-          }
 
-          ~ .img_minus_tablet,
-          ~ .minus {
-            display: inline-block;
-          }
-        }
-      }
-      .img_plus_tablet {
-        display: inline-block;
-      }
+      @include button_tablet;
       .avtograf {
         display: none;
       }

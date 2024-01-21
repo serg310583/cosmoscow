@@ -104,40 +104,5 @@
     right: 30px;
     cursor: pointer;
   }
-  .img_minus_tablet,
-  .img_plus_tablet,
-  .img_minus_mobile,
-  .img_plus_mobile {
-    display: none;
-  }
-
-  .plus {
-    &:hover {
-      ~ .img_plus_desctop,
-      ~ .plus {
-        display: none;
-      }
-
-      ~ .img_minus_desctop,
-      ~ .minus {
-        display: inline-block;
-      }
-    }
-  }
-
-  .plus {
-    display: inline-block;
-    z-index: 3;
-  }
-  .img_plus_desctop {
-    display: inline-block;
-  }
-
-  .minus {
-    display: none;
-    z-index: 3;
-  }
-  .img_minus_desctop {
-    display: none;
-  }
+  @include button;
 }
