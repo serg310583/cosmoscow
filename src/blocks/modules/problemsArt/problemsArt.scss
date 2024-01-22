@@ -2,9 +2,7 @@
   position: relative;
   min-height: 3000px;
   padding-top: 100px;
-  //   padding-left: 60px;
-  background: url(../../../img/desctop/bg/bg3.png) no-repeat;
-  background-position: top 165px left 0px;
+
   &__title {
     font-size: 44px;
     width: 950px;
@@ -24,6 +22,12 @@
       width: 272px;
       height: 226px;
       font-size: 18px;
+      span {
+        font-style: italic;
+      }
+      .divider {
+        display: none;
+      }
     }
 
     &__item1 {
@@ -63,7 +67,6 @@
       padding-left: 45px;
       margin-left: 9px;
       font-size: 20px;
-
       .textBg {
         color: $text-color-light;
       }

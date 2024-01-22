@@ -146,8 +146,9 @@
 
 @media (max-width: 375px) {
   .priceTag {
-    min-height: 1780px;
+    // height: auto;
     width: 375px;
+    min-height: 2866px;
     padding-top: 97px;
     padding-left: 0px;
     padding-right: 22px;
@@ -375,49 +376,7 @@
     &__content3 {
       display: none;
     }
-    .priceTag_picture2 {
-      position: absolute;
-      overflow-x: clip;
-      width: 375px;
-      top: auto;
-      bottom: -650px;
-      left: 0px;
-      .img_minus_desctop,
-      .img_plus_desctop,
-      .img_plus_tablet,
-      .img_minus_tablet {
-        display: none;
-      }
-      .img_plus_mobile {
-        display: inline-block;
-      }
-      .img_plus_mobile,
-      .img_minus_mobile {
-        position: absolute;
 
-        top: 50px;
-        left: -120px;
-        z-index: 2;
-      }
-      .plus,
-      .minus {
-        display: none;
-      }
-      .plusM,
-      .minusM {
-        display: none;
-        z-index: 9;
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 90px;
-        right: 34px;
-        cursor: pointer;
-      }
-      .active {
-        display: block;
-      }
-    }
     &__content4Mobile {
       display: block;
       margin-top: 44px;
@@ -446,6 +405,52 @@
         .show,
         .hide {
           align-self: flex-end;
+        }
+      }
+    }
+    .wrapper__picture2 {
+      position: relative;
+      width: 375px;
+      height: 666px;
+      .priceTag_picture2 {
+        position: absolute;
+        overflow-x: clip;
+        width: 375px;
+        top: -160px;
+        left: 0px;
+        .img_minus_desctop,
+        .img_plus_desctop,
+        .img_plus_tablet,
+        .img_minus_tablet {
+          display: none;
+        }
+        .img_plus_mobile {
+          display: inline-block;
+        }
+        .img_plus_mobile,
+        .img_minus_mobile {
+          position: absolute;
+          top: 50px;
+          left: -120px;
+          z-index: 2;
+        }
+        .plus,
+        .minus {
+          display: none;
+        }
+        .plusM,
+        .minusM {
+          display: none;
+          z-index: 9;
+          width: 50px;
+          height: 50px;
+          position: absolute;
+          top: 200px;
+          right: 260px;
+          cursor: pointer;
+        }
+        .active {
+          display: block;
         }
       }
     }

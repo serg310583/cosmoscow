@@ -12,6 +12,7 @@
       padding-top: 140px;
       margin-left: 435px;
       margin-top: -40px;
+      width: 320px;
       background: url(../../../img/tablet/bg/bg3-1.png) no-repeat;
       background-position: top 0px left 0px;
       &__item1,
@@ -69,92 +70,285 @@
       }
     }
   }
+  .problemsArt__picture {
+    overflow-x: clip;
+    position: absolute;
+    z-index: 1;
+    width: 568px;
+    height: 744px;
+    top: 160px;
+    left: -160px;
+    .avtograf {
+      position: absolute;
+      font-style: italic;
+      top: -6px;
+      left: 64px;
+    }
+    .img_plus_desctop,
+    .img_minus_desctop {
+      position: absolute;
+      z-index: 2;
+      top: 0px;
+      left: -15px;
+      object-fit: cover;
+    }
+    .plusM,
+    .minusM {
+      display: none;
+    }
+    .minus,
+    .plus {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: auto;
+      bottom: -190px;
+      left: 486px;
+      cursor: pointer;
+    }
+    @include button_tablet;
+  }
+  .problemsArt__picture2 {
+    width: 568px;
+    height: 744px;
+    top: 1400px;
+    left: 160px;
+    .avtograf {
+      top: 23px;
+      left: 300px;
+    }
+    .img_plus_desctop,
+    .img_minus_desctop {
+      top: 0px;
+      left: -15px;
+    }
+    .minus,
+    .plus {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: -40px;
+      left: 445px;
+      cursor: pointer;
+    }
+    @include button_tablet;
+  }
+  .problemsArt__picture3 {
+    width: 524px;
+    height: 505px;
+    top: 1630px;
+    left: -265px;
+    .avtograf {
+      top: 23px;
+      left: 300px;
+    }
+    .img_plus_desctop,
+    .img_minus_desctop {
+      top: 0px;
+      left: -15px;
+    }
+    .minus,
+    .plus {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      top: 240px;
+      left: 445px;
+      cursor: pointer;
+    }
+    @include button_tablet;
+  }
 }
-.problemsArt__picture {
-  overflow-x: clip;
-  position: absolute;
-  z-index: 1;
-  width: 568px;
-  height: 744px;
-  top: 160px;
-  left: -160px;
-  .avtograf {
-    position: absolute;
-    font-style: italic;
-    top: -6px;
-    left: 64px;
+@media (max-width: 375px) {
+  .problemsArt {
+    background: url(../../../img/mobile/bg/bg6.png) no-repeat;
+    background-position: top 0px left 0px;
+    padding-top: 0;
+    margin-top: -35px;
+    &__title {
+      width: 316px;
+      margin-left: 28px;
+      font-size: 32px;
+    }
+    &__content1 {
+      padding-left: 25px;
+      padding-top: 65px;
+      margin-left: 0px;
+      width: 300px;
+      background: url(../../../img/mobile/bg/bg6-1.png) no-repeat;
+      background-position: top 27px left 21px;
+
+      &__item1,
+      &__item2,
+      &__item3 {
+        width: 212px;
+        height: 175px;
+        font-size: 14px;
+      }
+      &__item1 {
+        margin-bottom: 15px;
+        background: url(../../../img/mobile/bg/bg6-1-1.png) no-repeat;
+        background-position: top 0px left 8px;
+      }
+      &__item2 {
+        margin-bottom: 10px;
+      }
+      &__item3 {
+        background: url(../../../img/mobile/bg/bg6-1-2.png) no-repeat;
+        background-position: top 5px left 50px;
+        .divider {
+          display: block;
+        }
+      }
+    }
+    .problemsArt__picture {
+      overflow-x: clip;
+      position: absolute;
+      z-index: 1;
+      width: 568px;
+      height: 744px;
+      top: 653px;
+      left: 32px;
+      .avtograf {
+        position: absolute;
+        font-style: italic;
+        top: 386px;
+        left: 4px;
+        font-size: 14px;
+      }
+      .plusM,
+      .minusM {
+        top: 237px;
+        left: 12px;
+      }
+
+      @include button_mobile;
+    }
+    &__content2 {
+      margin-bottom: 0px;
+      margin-top: 86px;
+      &__text {
+        width: 200px;
+        font-size: 18px;
+        font-family: 'Times New Roman';
+        line-height: 140%;
+        .transfer {
+          display: none;
+        }
+      }
+    }
+    .problemsArt__picture2 {
+      overflow-x: clip;
+      width: 375px;
+      height: 744px;
+      top: 1360px;
+      left: 0px;
+      .avtograf {
+        top: 300px;
+        left: 260px;
+        font-size: 14px;
+      }
+      .img_plus_mobile,
+      .img_minus_mobile {
+        position: absolute;
+        top: 0px;
+        left: -44px;
+        z-index: 2;
+      }
+      .plusM,
+      .minusM {
+        top: -45px;
+        left: 300px;
+      }
+
+      @include button_mobile;
+    }
+    .problemsArt__picture3 {
+      overflow-x: clip;
+      width: 375px;
+      height: 283px;
+      top: 1604px;
+      left: 0px;
+      .avtograf {
+        top: 300px;
+        left: 260px;
+        font-size: 14px;
+      }
+      .img_plus_mobile,
+      .img_minus_mobile {
+        position: absolute;
+        top: 0px;
+        left: -235px;
+        z-index: 2;
+      }
+      .plusM,
+      .minusM {
+        top: 104px;
+        left: 136px;
+      }
+
+      @include button_mobile;
+    }
+    &__content3 {
+      display: none;
+    }
+
+    &__content3Mobile {
+      margin-top: 505px;
+      .article__container {
+        width: 226px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .minText,
+        .maxText {
+          font-size: 18px;
+          display: block;
+          .dB {
+            font-style: italic;
+          }
+          .text_bg {
+            color: $text-color-light;
+          }
+        }
+        .minText {
+          width: 240px;
+          padding-left: 24px;
+          padding-right: 19px;
+          line-height: 123%;
+          background: url(../../../img/mobile/bg/bg8.png) no-repeat top 2px left
+              0px,
+            url(../../../img/mobile/bg/bg8-1.png) no-repeat top 368px left 0px;
+        }
+
+        .maxText {
+          width: 228px;
+          padding-top: 43px;
+          padding-left: 22px;
+          padding-right: 0px;
+          line-height: 122%;
+          display: none;
+          background: url(../../../img/mobile/bg/bg7.png) no-repeat top 0px left
+              0px,
+            url(../../../img/mobile/bg/bg7-1.png) no-repeat top 743px left 0px;
+        }
+
+        .show,
+        .hide {
+          align-self: flex-end;
+          margin-top: 8px;
+          display: none;
+          font-size: 12px;
+          color: $text-color-secondary;
+          background: inherit;
+          border: none;
+          cursor: pointer;
+          z-index: 10;
+        }
+        .active {
+          display: block;
+        }
+      }
+    }
   }
-  .img_plus_desctop,
-  .img_minus_desctop {
-    position: absolute;
-    z-index: 2;
-    top: 0px;
-    left: -15px;
-    object-fit: cover;
-  }
-  .plusM,
-  .minusM {
-    display: none;
-  }
-  .minus,
-  .plus {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: auto;
-    bottom: -190px;
-    left: 486px;
-    cursor: pointer;
-  }
-  @include button_tablet;
-}
-.problemsArt__picture2 {
-  width: 568px;
-  height: 744px;
-  top: 1400px;
-  left: 160px;
-  .avtograf {
-    top: 23px;
-    left: 300px;
-  }
-  .img_plus_desctop,
-  .img_minus_desctop {
-    top: 0px;
-    left: -15px;
-  }
-  .minus,
-  .plus {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: -40px;
-    left: 445px;
-    cursor: pointer;
-  }
-  @include button_tablet;
-}
-.problemsArt__picture3 {
-  width: 524px;
-  height: 505px;
-  top: 1630px;
-  left: -265px;
-  .avtograf {
-    top: 23px;
-    left: 300px;
-  }
-  .img_plus_desctop,
-  .img_minus_desctop {
-    top: 0px;
-    left: -15px;
-  }
-  .minus,
-  .plus {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    top: 240px;
-    left: 445px;
-    cursor: pointer;
-  }
-  @include button_tablet;
 }

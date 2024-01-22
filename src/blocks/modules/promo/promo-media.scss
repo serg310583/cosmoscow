@@ -129,6 +129,11 @@
       left: -30px;
       z-index: 2;
     }
+    .plusM,
+    .minusM {
+      top: 90px;
+      right: 34px;
+    }
     @include button_mobile;
   }
 }
