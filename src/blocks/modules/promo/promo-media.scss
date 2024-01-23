@@ -63,7 +63,7 @@
     height: 865px;
     .streak {
       width: 375px;
-
+      z-index: 2;
       &.down {
         display: none;
       }

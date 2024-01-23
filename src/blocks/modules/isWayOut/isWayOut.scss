@@ -1,0 +1,162 @@
+.isWay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  padding-top: 200px;
+  padding-left: 60px;
+  &__content {
+    display: flex;
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+      &__title {
+        font-size: 44px;
+        margin-bottom: 24px;
+      }
+      &__text {
+        font-style: italic;
+        width: 560px;
+        font-size: 18px;
+      }
+    }
+    &__grey {
+      margin-left: 40px;
+      width: 560px;
+      height: 420.217px;
+      z-index: 1;
+      background: url(../../../img/desctop/bg/bg4.png) no-repeat;
+    }
+  }
+
+  &__content3 {
+    margin-top: -35px;
+    margin-left: -60px;
+    margin-bottom: 100px;
+    align-self: center;
+    width: 618px;
+    height: 539px;
+    padding: 20px 29px;
+    background-color: $bg-color-dark;
+    z-index: 2;
+
+    &__number {
+      font-size: 44px;
+      color: $text-color-light;
+      margin-bottom: 12px;
+    }
+    &__text {
+      font-size: 18px;
+      color: $text-color-light;
+      margin-bottom: 34px;
+    }
+  }
+  &__content4 {
+    position: absolute;
+    top: 650px;
+    left: 120px;
+    width: 165px;
+    height: 342px;
+    background: url(../../../img/desctop/bg/bg4-1.png) no-repeat;
+  }
+  &__content5 {
+    align-self: center;
+    margin-left: -60px;
+    margin-bottom: 170px;
+    width: 560px;
+    height: 264px;
+    font-size: 20px;
+    .dB {
+      font-style: italic;
+    }
+  }
+  .isWay__picture {
+    overflow-x: clip;
+    position: absolute;
+    z-index: 1;
+    width: 1280px;
+    height: 796px;
+    top: 1287px;
+    left: -291px;
+    .img_plus_desctop,
+    .img_minus_desctop {
+      position: absolute;
+      z-index: 2;
+      top: 0px;
+      left: 0px;
+      object-fit: cover;
+    }
+    .plusM,
+    .minusM {
+      display: none;
+    }
+
+    .minus,
+    .plus {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: -110px;
+      right: auto;
+      left: 512px;
+      cursor: pointer;
+    }
+    .avtograf {
+      position: absolute;
+      font-style: italic;
+      font-size: 18px;
+      top: 80px;
+      left: 350px;
+    }
+    @include button;
+  }
+  &__content6 {
+    font-size: 18px;
+    width: 560px;
+    height: 350px;
+    font-size: 20px;
+    .avtograf {
+      font-style: italic;
+    }
+  }
+  .isWay__picture2 {
+    overflow-x: clip;
+    position: absolute;
+    z-index: 1;
+    width: 1280px;
+    height: 430px;
+    top: 1657px;
+    left: 0px;
+    .img_plus_desctop,
+    .img_minus_desctop {
+      position: absolute;
+      z-index: 2;
+      top: -216px;
+      left: 530px;
+      object-fit: cover;
+    }
+    .plusM,
+    .minusM {
+      display: none;
+    }
+
+    .minus,
+    .plus {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 140px;
+      left: 450px;
+      cursor: pointer;
+    }
+    .avtograf {
+      position: absolute;
+      font-style: italic;
+      font-size: 18px;
+      top: 410px;
+      left: 763px;
+    }
+    @include button;
+  }
+}

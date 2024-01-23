@@ -1,0 +1,101 @@
+.redkedsHarisma {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 1280px;
+  height: 1530px;
+  &__content {
+    height: 406px;
+    width: 100%;
+    background: url(../../../img/desctop/bg/bg5.png) no-repeat;
+    background-position: top 304px left 100px;
+  }
+  &__content2 {
+    position: absolute;
+    top: 392px;
+    left: 0px;
+    height: 1145px;
+    width: 100%;
+    background-color: $bg-color-secondary;
+
+    &__picture {
+      position: absolute;
+      top: -300px;
+      left: 0px;
+    }
+    &__text {
+      margin-top: 111px;
+      margin-left: 671px;
+      background: url(../../../img/desctop/bg/bg5-3.png) no-repeat;
+      background-position: top -5px left -5px;
+      span {
+        text-transform: uppercase;
+        color: $text-color-light;
+      }
+      width: 560px;
+      height: 226px;
+      font-size: 20px;
+    }
+  }
+  .redkedsHarisma__picture {
+    overflow-x: clip;
+    position: absolute;
+    z-index: 1;
+    width: 1280px;
+    height: 796px;
+    top: 490px;
+    left: 0px;
+    .img_plus_desctop,
+    .img_minus_desctop {
+      position: absolute;
+      z-index: 2;
+      top: 0px;
+      left: 908px;
+      object-fit: cover;
+    }
+    .plusM,
+    .minusM {
+      display: none;
+    }
+
+    .minus,
+    .plus {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 310px;
+      left: 830px;
+      cursor: pointer;
+    }
+    .avtograf {
+      position: absolute;
+      top: 480px;
+      left: 760px;
+      font-size: 18px;
+      font-style: italic;
+    }
+    @include button;
+  }
+  &__content3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-top: 1310px;
+    z-index: 3;
+
+    width: 465px;
+    &__link {
+      margin-bottom: 40px;
+      &__plus {
+        width: 100px;
+        height: 100px;
+      }
+    }
+    &__text {
+      text-transform: uppercase;
+      font-size: 28px;
+      color: $text-color-light;
+    }
+  }
+}

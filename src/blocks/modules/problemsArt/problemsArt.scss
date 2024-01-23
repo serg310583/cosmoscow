@@ -1,8 +1,9 @@
 .problemsArt {
   position: relative;
-  min-height: 3000px;
+  min-height: 2182px;
   padding-top: 100px;
-
+  background: url(../../../img/desctop/bg/bg3.png) no-repeat;
+  background-position: top 164px left 0px;
   &__title {
     font-size: 44px;
     width: 950px;
@@ -61,14 +62,21 @@
       }
     }
   }
+  &__content3Mobile {
+    display: none;
+  }
   &__content3 {
     &__text {
       width: 620px;
       padding-left: 45px;
       margin-left: 9px;
       font-size: 20px;
+
       .textBg {
         color: $text-color-light;
+      }
+      .divider {
+        display: none;
       }
       .dB {
         font-style: italic;
@@ -154,7 +162,7 @@
   position: absolute;
   z-index: 2;
   width: 1200px;
-  height: 720px;
+  height: 212px;
   top: 1572px;
   left: 0px;
   .img_plus_desctop,

@@ -43,6 +43,9 @@
         }
       }
     }
+    &__content3Mobile {
+      display: none;
+    }
     &__content3 {
       margin-top: 634px;
 
@@ -205,21 +208,28 @@
       overflow-x: clip;
       position: absolute;
       z-index: 1;
-      width: 568px;
+      width: 375px;
       height: 744px;
       top: 653px;
-      left: 32px;
+      left: 0px;
       .avtograf {
         position: absolute;
         font-style: italic;
         top: 386px;
-        left: 4px;
+        left: 28px;
         font-size: 14px;
+      }
+      .img_plus_mobile,
+      .img_minus_mobile {
+        position: absolute;
+        top: 0px;
+        left: 32px;
+        z-index: 2;
       }
       .plusM,
       .minusM {
         top: 237px;
-        left: 12px;
+        left: 46px;
       }
 
       @include button_mobile;
@@ -294,6 +304,7 @@
     }
 
     &__content3Mobile {
+      display: block;
       margin-top: 505px;
       .article__container {
         width: 226px;
