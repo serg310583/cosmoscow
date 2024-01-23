@@ -8,6 +8,7 @@
   padding-left: 60px;
   &__content {
     display: flex;
+
     &__wrapper {
       display: flex;
       flex-direction: column;
@@ -50,6 +51,9 @@
       font-size: 18px;
       color: $text-color-light;
       margin-bottom: 34px;
+      &-mobile {
+        display: none;
+      }
     }
   }
   &__content4 {
@@ -111,11 +115,17 @@
     }
     @include button;
   }
+  &__content5Mobile {
+    display: none;
+  }
   &__content6 {
     font-size: 18px;
     width: 560px;
     height: 350px;
     font-size: 20px;
+    .divider {
+      display: none;
+    }
     .avtograf {
       font-style: italic;
     }
