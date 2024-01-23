@@ -52,6 +52,7 @@
       font-size: 18px;
     }
     .isWay__picture {
+      overflow-x: clip;
       width: 524px;
       height: 505px;
       top: 1147px;
@@ -90,10 +91,11 @@
       }
     }
     .isWay__picture2 {
-      width: 524px;
+      overflow-x: clip;
+      width: 758px;
       height: 505px;
       top: 1334px;
-      left: 200px;
+      left: 0px;
       .avtograf {
         top: 23px;
         left: 300px;
@@ -102,7 +104,7 @@
       .img_minus_tablet {
         position: absolute;
         top: 0px;
-        left: 124px;
+        left: 324px;
       }
       .minus,
       .plus {
@@ -273,8 +275,9 @@
       width: 375px;
       height: 283px;
       top: auto;
-      bottom: -215px;
+      bottom: -320px;
       left: -13px;
+      margin-bottom: 100px;
 
       .img_plus_mobile,
       .img_minus_mobile {

@@ -1,0 +1,160 @@
+@media (max-width: 768px) {
+  .redkedsHarisma {
+    margin-top: 200px;
+    width: 768px;
+    height: 1150px;
+    &__content {
+      height: 200px;
+      background: url(../../../img/tablet/bg/bg5.png) no-repeat;
+      background-position: top 145px left 100px;
+    }
+    &__content2 {
+      top: 205px;
+      height: 1245px;
+
+      &__picture {
+        position: absolute;
+        width: 91%;
+        top: -88px;
+        left: -42px;
+        transform: rotate(5deg);
+      }
+      &__text {
+        margin-top: 60px;
+        margin-left: 430px;
+        width: 335px;
+        background: url(../../../img/tablet/bg/bg5-3.png) no-repeat;
+        background-position: top -5px left -5px;
+        height: 226px;
+        font-size: 18px;
+        line-height: 132%;
+      }
+    }
+    .redkedsHarisma__picture {
+      width: 768px;
+      height: 505px;
+      top: 427px;
+      left: 0px;
+
+      .avtograf {
+        top: 23px;
+        left: 300px;
+      }
+      .img_plus_tablet,
+      .img_minus_tablet {
+        position: absolute;
+        top: 0px;
+        left: 528px;
+      }
+      .minus,
+      .plus {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 226px;
+        left: 494px;
+        cursor: pointer;
+      }
+      .avtograf {
+        top: 338px;
+        left: 406px;
+      }
+      @include button_tablet;
+    }
+    &__content3 {
+      margin-top: 972px;
+      width: 394px;
+      &__link {
+        margin-bottom: 28px;
+        &__plus {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &__text {
+        font-size: 24px;
+      }
+    }
+  }
+}
+@media (max-width: 375px) {
+  .redkedsHarisma {
+    position: relative;
+    overflow-x: clip;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    height: 1150px;
+    &__content {
+      position: absolute;
+      top: 200px;
+      height: 200px;
+      background: url(../../../img/mobile/bg/bg10.png) no-repeat;
+      background-position: top 30px left 15px;
+    }
+    &__content2 {
+      position: relative;
+      width: 375px;
+      top: 255px;
+
+      &__picture {
+        width: 118%;
+        top: -88px;
+        left: -42px;
+        transform: rotate(11deg);
+      }
+      &__text {
+        position: absolute;
+        margin-left: 28px;
+        width: 233px;
+        top: 528px;
+        left: 0px;
+        background: url(../../../img/tablet/bg/bg5-3.png) no-repeat;
+        background-position: top -5px left -28px;
+
+        font-size: 16px;
+        line-height: 122%;
+      }
+    }
+    &__content3 {
+      margin-top: 350px;
+      width: 375px;
+      &__link {
+        margin-bottom: 15px;
+        &__plus {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      &__text {
+        font-size: 16px;
+      }
+    }
+    .redkedsHarisma__picture {
+      overflow-x: clip;
+      width: 375px;
+      height: 423px;
+      top: 886px;
+      left: 188px;
+
+      .img_plus_mobile,
+      .img_minus_mobile {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 2;
+      }
+      .plusM,
+      .minusM {
+        top: 330px;
+        left: 285px;
+      }
+      @include button_mobile;
+      .avtograf {
+        top: 488px;
+        left: 224px;
+        font-size: 14px;
+      }
+    }
+  }
+}
