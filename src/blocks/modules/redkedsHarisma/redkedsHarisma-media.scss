@@ -84,7 +84,7 @@
     max-width: 375px;
     display: flex;
     flex-direction: column;
-    height: 1150px;
+    height: 1215px;
     &__content {
       position: absolute;
       top: 200px;
@@ -147,12 +147,12 @@
       .plusM,
       .minusM {
         top: 330px;
-        left: 285px;
+        left: 97px;
       }
       @include button_mobile;
       .avtograf {
-        top: 488px;
-        left: 224px;
+        top: 409px;
+        left: 38px;
         font-size: 14px;
       }
     }
