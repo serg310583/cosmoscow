@@ -7,6 +7,15 @@
       margin-left: 35px;
       font-size: 36px;
     }
+    .go-top {
+      z-index: 3;
+      top: 185px;
+      right: 435px;
+      svg {
+        width: 53px;
+        height: 53px;
+      }
+    }
     &__content1 {
       padding-left: 25px;
       padding-top: 140px;
@@ -172,6 +181,15 @@
       width: 316px;
       margin-left: 28px;
       font-size: 32px;
+    }
+    .go-top {
+      top: 5px;
+      right: 30px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
     }
     &__content1 {
       padding-left: 25px;

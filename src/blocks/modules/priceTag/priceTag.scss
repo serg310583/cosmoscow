@@ -7,6 +7,16 @@
     font-size: 44px;
     padding-bottom: 24px;
   }
+  .go-top {
+    position: absolute;
+    top: 204px;
+    right: 181px;
+    svg {
+      fill: #ebebeb;
+      width: 60px;
+      height: 60px;
+    }
+  }
   &__content {
     display: flex;
 

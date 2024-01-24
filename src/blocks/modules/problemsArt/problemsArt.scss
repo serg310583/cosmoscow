@@ -9,6 +9,16 @@
     width: 950px;
     margin-left: 60px;
   }
+  .go-top {
+    position: absolute;
+    top: 155px;
+    right: 600px;
+    svg {
+      fill: #ebebeb;
+      width: 60px;
+      height: 60px;
+    }
+  }
   &__content1 {
     padding-left: 67px;
     padding-top: 130px;

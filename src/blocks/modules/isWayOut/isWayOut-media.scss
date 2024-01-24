@@ -8,6 +8,14 @@
           font-size: 36px;
           margin-bottom: 24px;
         }
+        .go-top {
+          top: 150px;
+          right: 390px;
+          svg {
+            width: 53px;
+            height: 53px;
+          }
+        }
         &__text {
           width: 340px;
           font-size: 16px;
@@ -135,6 +143,16 @@
           font-size: 32px;
           margin-bottom: 24px;
         }
+        .go-top {
+          top: 5px;
+          right: 30px;
+
+          svg {
+            width: 30px;
+            height: 30px;
+          }
+        }
+
         &__text {
           width: 320px;
           font-size: 14px;
