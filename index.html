@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>cosmoscow</title>
+    <meta name="theme-color" content="#fff" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="img/favicons/favicon-16x16.png"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="img/favicons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link
+      rel="apple-touch-icon-precomposed"
+      href="img/favicons/apple-touch-icon-precomposed.png"
+    />
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="img/favicons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="img/favicons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/favicons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="img/favicons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/favicons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="img/favicons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="img/favicons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="img/favicons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="167x167"
+      href="img/favicons/apple-touch-icon-167x167.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="1024x1024"
+      href="img/favicons/apple-touch-icon-1024x1024.png"
+    />
+    <link rel="stylesheet" href="styles/main.min.css" />
+  </head>
+  <body>
+    <section class="header container">
+  <div class="header__hamburger" role="button" aria-label="Меню">
+    <svg>
+      <use xlink:href="img/sprites/sprite.svg#hamburger"></use>
+    </svg>
+  </div>
+  <nav class="header__menu">
+    <ul class="items">
+      <li class="item">
+        <a href="#sellingPrice">Откуда взялась идея продать ценник?</a>
+      </li>
+      <li class="item">
+        <a href="#problemsArt"
+          >Проблемы с которыми сталкиваются носители искусства?</a
+        >
+      </li>
+      <li class="item"><a href="#isWay">Какой выход?</a></li>
+    </ul>
+  </nav>
+</section>
+
+    <section class="promo container" aria-labelledby="mission">
+  <div class="streak up">
+    <img src="img\desctop\bg\Mask.webp" alt="streak" />
+  </div>
+  <div class="promo__content">
+    <div class="promo__content__left">
+      <h1 id="mission">
+        МИССИЯ<br />
+        ВЫПОЛНИМА:<br />
+        ПРОДАТЬ ЦЕННИК
+      </h1>
+      <p class="promo_text">
+        В одном из корнеров Cosmoscow 2023 посетители находили
+        ценник. Центральный и единственный предмет экспозиции — стеклянный куб
+        со счетчиком, показывающий общий объем рынка современного искусства в
+        России за последний год. Он призывал посчитать цену современного
+        искусства в России и найти решение для прозрачности рынка.
+      </p>
+      <p class="promo_text_mobile">
+        На Cosmoscow 2023 был стеклянный куб со счетчиком, показывающим объем
+        рынка современного искусства в России за последний год. Посетители могли
+        подумать о прозрачности рынка и цене современного искусства в стране.
+      </p>
+      <!-- desctop & tablet -->
+      <div class="artObject">
+        <img src="img\desctop\art\cube_desctop.png" alt="cube" />
+      </div>
+      <!-- mobile -->
+      <div class="artObject_mobile">
+        <img src="img\mobile\art\cube.png" alt="cube" />
+      </div>
+    </div>
+    <div class="promo__content__right">
+      <div class="avtograf">REDKEDS CHARISMA</div>
+    </div>
+  </div>
+  <div class="streak down">
+    <img src="img\desctop\bg\Mask.webp" alt="streak" />
+  </div>
+
+  <div class="promo__picture button-container">
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+    <!-- image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redked 1.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redked 1(1).webp"
+      alt="redked"
+    />
+
+    <!-- image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 1.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 1(1).webp"
+      alt="redked"
+    />
+
+    <!-- image mobile -->
+    <img
+      class="img_plus_mobile"
+      id="img_plus_mobile"
+      src="img\mobile\redked\redked 1.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      id="img_minus_mobile"
+      src="img\mobile\redked\redked 1(1).webp"
+      alt="redked"
+    />
+  </div>
+</section>
+
+    <section class="priceTag container" aria-labelledby="sellingPrice">
+  <h1 class="priceTag__title" id="sellingPrice">
+    ОТКУДА ВЗЯЛАСЬ ИДЕЯ ПРОДАТЬ ЦЕННИК?
+  </h1>
+  <div class="go-top" role="button" aria-label="up">
+  <svg>
+    <use xlink:href="img/sprites/sprite.svg#Arrow-Up"></use>
+  </svg>
+</div>
+
+
+  <div class="priceTag__content">
+    <div class="priceTag__content__left">
+      <p class="priceTag_text">
+        В ближайшие годы нас ждет долгий и витиеватый путь к стабилизации
+        российского арт-рынка: важнейшей частью такой «стабилизации» является
+        уровень его прозрачности. Чтобы рассчитать стоимость российского рынка
+        искусства приходится апеллировать к открытым источникам, и уже на этом
+        этапе начинаются определенные проблемы. Не каждая российская галерея и
+        художник продают свои картину «в белую», многие из представителей
+        арт-сферы предпочитают оставаться в серой зоне.
+        <span
+          >Мы поговорили Денисом Башевым и Сергеем Рожиным о том, как на
+          современном арт-рынке чувствует себя художник и почему продавать свои
+          работы в «белую» — это круто? А также о проблемах в взаимоотношениях
+          между галереями и художниками.</span
+        >
+      </p>
+      <p class="priceTag_text-mobile">
+        В арт-рынке России важна прозрачность. Проблема заключается в том, что
+        не все галереи и художники продают свои работы "в белую".
+        <span
+          >Мы поговорили с художниками о проблемах в отношениях с галереями и
+          преимуществах продажи работ "в белую".</span
+        >
+      </p>
+    </div>
+    <div class="priceTag__content__right">
+      <div class="priceTag__content__right__wrapper">
+        <div class="priceTag__content__right__wrapper__item">
+          <div class="item_number">67,8 <span>млрд долларов</span></div>
+          <div class="item_text">Международный оборот искусства в 2022</div>
+        </div>
+        <div class="priceTag__content__right__wrapper__item">
+          <div class="item_number">45%</div>
+          <div class="item_text">Рыночная доля арт-рынка США от мирового</div>
+        </div>
+        <div class="priceTag__content__right__wrapper__item">
+          <div class="item_number">2,7 <span>млрд долларов</span></div>
+          <div class="item_text">
+            Pынок современного искусства принес в сезоне июль 2020 — июнь 2021
+          </div>
+        </div>
+        <div class="priceTag__content__right__wrapper__item">
+          <div class="item_number">54%</div>
+          <div class="item_text">
+            Mировой oборот аукционных продаж современного искусства США и
+            Великобритании
+          </div>
+        </div>
+        <div class="autograf">Ди (Денис Башев)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="priceTag_picture button-container">
+    <!-- button desctop & tablet -->
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+    <!--image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redked 2.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redked 2(1).webp"
+      alt="redked"
+    />
+    <!--image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 2.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 2(1).webp"
+      alt="redked"
+    />
+    <!--image mobile -->
+    <img
+      class="img_plus_mobile"
+      src="img\mobile\redked\redked 2.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      src="img\mobile\redked\redked 2(1).webp"
+      alt="redked"
+    />
+  </div>
+  <div class="priceTag__content2">
+    <p class="priceTag__content2__text">
+      Когда ты только начинаешь заниматься современным искусством, непонятно,
+      как себя оценивать и как к себе относиться. Если ты хочешь делать это
+      серьезно, но у тебя при этом нет средств к существованию, чтобы можно было
+      просто жить и творить, не думая о том, на что покушать, то у тебя явным
+      образом возникает вопрос:
+      <mark>
+        <span class="text_bg">сколько стоит то</span>,
+        <span class="text_bg">что ты делаешь?</span>
+      </mark>
+      И начнешь ли ты посредством этого когда-нибудь зарабатывать? Финансовый
+      вопрос интересует людей даже на старте.
+      <span class="dB">Денис Башев</span>
+    </p>
+    <p class="priceTag__content2__text2">
+      Разумно задаться вопросом, сколько стоит моя жизнь, время других
+      художников, как соотнести их вместе, во что это выливается, какой объем
+      рынка, куда ты попадаешь. Я начал задавать эти вопросы, не нашел на них
+      ответа. Понял, что нет легальных данных, есть разные мнения людей, есть
+      данные, основанные лишь на части рынка. Так и пришел к идее сделать точку
+      входа в виде цены. Потом стало понятно, что никто еще не продавал ценник.
+      <span class="text_bg"
+        >Люди продают произведения искусства, но никто не продавал ценник к
+        чему-либо. Мы подумали, что это хорошая метафора: продать ценник,
+        который бы отражал стоимость всего рынка современного искусства в
+        России.</span
+      >
+      <span class="dB">Денис Башев</span>
+    </p>
+    <p class="priceTag__content2__text3">
+      Белый рынок — это круто. Ты ничего не прячешь, у тебя есть понятные для
+      всех правила игры. Ты получаешь инструменты, которые теневая экономика
+      тебе не может дать. Серый и черный рынок интересен только в плане
+      краткосрочной прибыли, ты не платишь с этого налоги. Других плюсов у этого
+      нет. Но в перспективе то, что ты не заплатил налоги сейчас, но при этом
+      продолжаешь играть в долгую, лишает тебя возможности роста. Ты просто
+      получаешь краткосрочную прибыль. В долгую же — рост рынка, который будет в
+      разы больше,<br class="divider" />
+      чем то, что ты отдаешь налогами.
+      <span class="text_bg"
+        >Что ты купишь на эти деньги? Еще одну квартиру? Машину? Зачем за это
+        рубиться?</span
+      >
+      <span class="dB">Денис Башев</span>
+    </p>
+  </div>
+  <div class="priceTag__content2Mobile">
+    <div class="article__container">
+      <p class="minText">
+        Когда начинаешь заниматься искусством, возникает
+        <span class="text_bg"
+          >вопрос<br />
+          о ценности своей работы</span
+        >
+        и возможности заработка. <span class="dB">Денис Башев</span>
+      </p>
+
+      <p class="maxText">
+        Когда ты только начинаешь заниматься современным искусством, непонятно,
+        как себя оценивать и как к себе относиться. Если ты хочешь делать это
+        серьезно, но у тебя при этом нет средств к существованию, чтобы можно
+        было просто жить и творить, не думая о том, на что покушать, то у тебя
+        явным образом возникает вопрос:
+        <span class="text_bg"
+          >сколько стоит то, что<br />
+          ты делаешь?</span
+        >
+        И начнешь ли ты посредством этого когда-нибудь зарабатывать? Финансовый
+        вопрос интересует людей даже на старте.
+        <span class="dB">Денис Башев</span>
+      </p>
+      <button class="show active">читать подробнее</button>
+      <button class="hide">Скрыть</button>
+    </div>
+  </div>
+
+  <div class="priceTag__content3Mobile">
+    <div class="article__container">
+      <p class="minText">
+        Сколько стоит моя жизнь, время других художников. Я начал задавать эти
+        вопросы, но понял, что нет легальных данных.<br />
+        Люди продают произведения искусства, но никто не продавал ценник <br />
+        к чему-либо.
+        <span class="text_bg"
+          >Мы подумали, что это хорошая метафора: продать ценник, который бы
+          отражал стоимость всего рынка современного <br />
+          искусства в России <br
+        /></span>
+        <span class="dB">Денис Башев</span>
+      </p>
+
+      <p class="maxText">
+        Разумно задаться вопросом, сколько стоит моя жизнь, время других
+        художников, как соотнести их вместе, во что это выливается, какой объем
+        рынка, куда ты попадаешь. Я начал задавать эти вопросы, не нашел на них
+        ответа. Понял, что нет легальных данных, есть разные мнения людей, есть
+        данные, основанные лишь на части рынка. Так и пришел к идее сделать
+        точку входа в виде цены. <br />
+        Потом стало понятно, что никто еще не продавал ценник
+        <span class="text_bg"
+          >Люди продают произведения искусства, но никто <br />
+          не продавал ценник к чему-либо. Мы подумали, что это хорошая метафора:
+          продать ценник, который бы отражал стоимость всего рынка современного
+          искусства в России.</span
+        >
+        <span class="dB">Денис Башев</span>
+      </p>
+      <button class="show active">читать подробнее</button>
+      <button class="hide">Скрыть</button>
+    </div>
+  </div>
+  <div class="priceTag__content4Mobile">
+    <p class="text">
+      А работать над художником никто не хочет. Это отдельная работа, это
+      энтузиазм. И часто происходит ситуация, что берут тех, кто хорошо
+      продается. <br />
+      <cspan class="dB">Сергей Рожин</span>
+    </p>
+  </div>
+  <div class="priceTag__content5Mobile">
+    <div class="article__container">
+      <p class="minText">
+        Качество избирательства в искусстве упало. Художники, такие как Алекс Монополия и Бэнкси, следуют трендам, не показывая настоящего вкуса.
+        <span class="dB">Сергей Рожин</span>
+
+      </p>
+
+      <p class="maxText">
+        Он был всегда цирком с конями, и всегда было кумовство. В принципе, так же все и осталось. Сейчас просто качество избирательства искусства сильно упало. Именно искусство держится на коллекционерах и людях, которые имеют вкус, которые могут показать и повлиять на арт-рынок, а не просто следовать трендам, как, например, Алекс Монополия или Бэнкси, которые, по сути, довольно безвкусные художники. 
+        <span class="dB">Сергей Рожин</span>
+      </p>
+      <button class="show active">читать подробнее</button>
+      <button class="hide">Скрыть</button>
+    </div>
+  </div>
+  <div class="wrapper__picture2">
+    <div class="priceTag_picture2 button-container">
+      <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+      <!--image desctop -->
+      <img
+        class="img_plus_desctop"
+        src="img\desctop\redked\redked 3.webp"
+        alt="redked"
+      />
+      <img
+        class="img_minus_desctop"
+        src="img\desctop\redked\redked 3(1).webp"
+        alt="redked"
+      />
+      <!--image tablet -->
+      <img
+        class="img_plus_tablet"
+        src="img\tablet\redked\redked 3.webp"
+        alt="redked"
+      />
+      <img
+        class="img_minus_tablet"
+        src="img\tablet\redked\redked 3(1).webp"
+        alt="redked"
+      />
+      <!--image mobile -->
+      <img
+        class="img_plus_mobile"
+        src="img\mobile\redked\redked 3.webp"
+        alt="redked"
+      />
+      <img
+        class="img_minus_mobile"
+        src="img\mobile\redked\redked 3(1).webp"
+        alt="redked"
+      />
+      <div class="avtograf">Сергей Рожин</div>
+    </div>
+
+</div>
+
+  <div class="priceTag__content3">
+    <p class="priceTag__content3__text">
+      А работать над художником никто не хочет. Это отдельная работа, это
+      энтузиазм. И часто происходит ситуация, что берут тех, кто хорошо
+      продается. <span class="dB">Сергей Рожин</span>
+    </p>
+    <p class="priceTag__content3__text2">
+      Он был всегда цирком с конями, и всегда было кумовство. В принципе, так же
+      все и осталось. Сейчас просто качество избирательства искусства сильно
+      упало. Именно искусство держится на коллекционерах и людях, которые имеют
+      вкус, которые могут показать и повлиять на арт-рынок, а не просто
+      следовать трендам, как, например, Алекс Монополия или Бэнкси, которые, по
+      сути, довольно безвкусные художники.<span class="dB">Сергей Рожин</span>
+    </p>
+  </div>
+  
+</section>
+
+    <section aria-labelledby="problemsArt" class="problemsArt container">
+  <h1 id="problemsArt" class="problemsArt__title">
+    ПРОБЛЕМЫ С КОТОРЫМИ СТАЛКИВАЮТСЯ НОСИТЕЛИ ИСКУССТВА?
+  </h1>
+  <div class="go-top" role="button" aria-label="up">
+  <svg>
+    <use xlink:href="img/sprites/sprite.svg#Arrow-Up"></use>
+  </svg>
+</div>
+
+
+  <div class="problemsArt__content1">
+    <div class="problemsArt__content1__item1">Рынок не мыслит художниками.</div>
+    <div class="problemsArt__content1__item2">
+      Что такое рынок искусства? основные деньги крутятся в консалтинге, в
+      логистике, в работе галерей, билеты на выставки. и это около 95% рынка.
+    </div>
+    <div class="problemsArt__content1__item3">
+      Прозрачность — как проверить, что картина действительно продается? Когда
+      мы говорим о деньгах, кажется, что это что-то нечистое.
+      <br class="divider" />
+      <span>Human Code</span>
+    </div>
+  </div>
+  <div class="problemsArt__picture button-container">
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+
+    <!-- image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redked 4.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redked 4(1).webp"
+      alt="redked"
+    />
+
+    <!-- image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 4.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 4(1).webp"
+      alt="redked"
+    />
+
+    <!-- image mobile -->
+    <img
+      class="img_plus_mobile"
+      id="img_plus_mobile"
+      src="img\mobile\redked\redked 4.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      id="img_minus_mobile"
+      src="img\mobile\redked\redked 4(1).webp"
+      alt="redked"
+    />
+    <div class="avtograf">Human Code</div>
+  </div>
+  <div class="problemsArt__content2">
+    <p class="problemsArt__content2__text">
+      В мире арта, по крайней мере в России, многое покрыто тайной: не все
+      данные открыты и доступны, не все данные известны. Блокчейн помогает
+      решить эту проблему. <br class="transfer" />
+      <span class="myInvest">MyInvest.Art</span>
+    </p>
+  </div>
+  <div class="problemsArt__picture2 button-container">
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+
+    <!-- image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redked 5.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redked 5(1).webp"
+      alt="redked"
+    />
+
+    <!-- image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 5.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 5(1).webp"
+      alt="redked"
+    />
+
+    <!-- image mobile -->
+    <img
+      class="img_plus_mobile"
+      id="img_plus_mobile"
+      src="img\mobile\redked\redked 5.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      id="img_minus_mobile"
+      src="img\mobile\redked\redked 5(1).webp"
+      alt="redked"
+    />
+    <div class="avtograf">MyInvest.Art</div>
+  </div>
+  <div class="problemsArt__picture3 button-container">
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+
+    <!-- image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redked 8.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redked 8(1).webp"
+      alt="redked"
+    />
+
+    <!-- image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 8.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 8(1).webp"
+      alt="redked"
+    />
+
+    <!-- image mobile -->
+    <img
+      class="img_plus_mobile"
+      id="img_plus_mobile"
+      src="img\mobile\redked\redked 8.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      id="img_minus_mobile"
+      src="img\mobile\redked\redked 8(1).webp"
+      alt="redked"
+    />
+  </div>
+  <div class="problemsArt__content3">
+    <p class="problemsArt__content3__text">
+      Люди не хотят инвестировать в современных художников России, потому что
+      непонятно, во-первых, что с ними происходит, ты не видишь их творчество в
+      разрезе времени, у тебя нет статистики, сколько стоили их работы год
+      назад, сколько стоят они сейчас, ты не понимаешь, как это растет и
+      меняется. Ты не понимаешь объемов рынка, у тебя нет представления,
+      насколько твои инвестиции будут прибыльными, ты не можешь оценить
+      значимость этого рынка. Инвесторам надо понимать, куда они вкладывают
+      деньги. Эта информация должна быть подтверждена.
+      <span class="textBg"
+        >Если получится так, что рынок современного искусства России станет
+        белым, если сделки перестанут совершаться в серую, то это позволит
+        привлечь больше художников и больше инвесторов и сделать все очень
+        понятным в разрезе времени, увидеть, как меняются цены, растет стоимость
+        художников, можно будет видеть динамику</span
+      >
+      <br class="divider" />
+      <span class="dB"> Денис Башев </span>
+    </p>
+  </div>
+  <div class="problemsArt__content3Mobile">
+    <div class="article__container">
+      <p class="minText">
+        Люди не хотят инвестировать в современных художников России из-за
+        отсутствия прозрачности в рынке искусства. Они не могут оценить рост и
+        изменения цен на работы художников, не видят объемы рынка и не уверены в
+        прибыльности инвестиций.
+        <span class="text_bg"
+          >Если рынок станет более прозрачным, это привлечет больше художников и
+          инвесторов, и позволит отслеживать динамику изменения цен и стоимости
+          работ художников.
+        </span>
+        <br />
+        <span class="dB">Денис Башев</span>
+      </p>
+
+      <p class="maxText">
+        Люди не хотят инвестировать в современных художников России, потому что
+        непонятно, во-первых, что с ними происходит, ты не видишь их творчество
+        в разрезе времени, у тебя нет статистики, сколько стоили их работы год
+        назад, сколько стоят они сейчас, ты не понимаешь, как это растет и
+        меняется. Ты не понимаешь объемов рынка, у тебя нет представления,
+        насколько твои инвестиции будут прибыльными, ты не можешь оценить
+        значимость этого рынка. Инвесторам надо понимать, куда они вкладывают
+        деньги. Эта информация должна быть подтверждена.
+        <span class="text_bg"
+          >Если получится так, что рынок современного искусства России станет
+          белым, если сделки перестанут совершаться в серую, то это позволит
+          привлечь больше художников и больше инвесторов и сделать все очень
+          понятным в разрезе времени, увидеть, как меняются цены, растет
+          стоимость художников, можно будет видеть динамику.</span
+        >
+        <br />
+
+        <span class="dB">Денис Башев</span>
+      </p>
+      <button class="show active">читать подробнее</button>
+      <button class="hide">Скрыть</button>
+    </div>
+  </div>
+</section>
+
+    <section class="isWay container" aria-labelledby="isWay">
+  <div class="isWay__content">
+    <div class="isWay__content__wrapper">
+      <h1 class="isWay__content__wrapper__title" id="isWay">КАКОЙ ВЫХОД?</h1>
+      <div class="go-top" role="button" aria-label="up">
+  <svg>
+    <use xlink:href="img/sprites/sprite.svg#Arrow-Up"></use>
+  </svg>
+</div>
+
+      <p class="isWay__content__wrapper__text">
+        Для формирования итоговой стоимости на объекте команда Human Code и
+        Myinvest.Art взяли три источника:
+      </p>
+    </div>
+    <div class="isWay__content__grey"></div>
+  </div>
+
+  <div class="isWay__content3">
+    <div class="isWay__content3__number">01</div>
+    <p class="isWay__content3__text">
+      Точная стоимость аукционных продаж с 18 октября 2022 по 8 августа 2023.
+      Общая сумма продаж составила: 170 375 022.00 руб.
+    </p>
+    <p class="isWay__content3__text-mobile">
+      Продажи на аукционах в период с 18.10.2022 по 8.08.2023 составили 170 375
+      022 руб.
+    </p>
+
+    <div class="isWay__content3__number">02</div>
+    <p class="isWay__content3__text">
+      Оценка продаж на ярмарках Cosmoscow и blazar. Оценка продаж на ярмарке
+      blazar составила 40 млн руб в 2022 и 46 млн руб в 2023. Так как мы считаем
+      стоимость за год, а blazar в 2023 уже прошел, мы включаем его стоимость в
+      рейтинг. Оценка продаж на Cosmoscow проводилась из косвенных источников и
+      составила 216 млн. руб. по версии
+    </p>
+    <p class="isWay__content3__text-mobile">
+      Продажи на ярмарке blazar составили 40 млн руб в 2022 и 46 млн руб в 2023,
+      а на Cosmoscow - 216 млн руб.
+    </p>
+    <div class="isWay__content3__number">03</div>
+    <p class="isWay__content3__text">
+      Поправочный годовой остаток, рассчитанный исходя из среднего количества
+      сделок в день в октябре и августе, а также исходя из добавочной суммы
+      сделок вне ярмарок за сентябрь.
+    </p>
+    <p class="isWay__content3__text-mobile">
+      Годовой остаток, рассчитанный на основе среднего количества сделок
+      ежедневно в октябре и августе, а также с добавочной суммы сделок вне
+      ярмарок за сентябрь.
+    </p>
+  </div>
+  <div class="isWay__content4"></div>
+  <div class="isWay__content5">
+    В какой-то момент количество людей, кто хочет белого рынка, перевалит
+    критическую точку. Кто станет тем самым человеком или группой, кому удастся
+    сдвинуть в сторону весь рынок, никто не знает, но это не значит, что не надо
+    совершать попытки. Рынок становится цивилизованнее, когда все в черную —
+    рынок деградирует, люди не обсуждают искусство публично, не знают, что
+    происходит внутри. А белый рынок понятный, там есть правила игры, которые
+    соответствуют времени, законам, развития общества, моральными принципами.
+    Это интересно. <span class="dB">Денис Башев</span>
+  </div>
+
+  <div class="isWay__content5Mobile">
+    <div class="article__container">
+      <p class="minText">
+        Количество людей, желающих белого рынка искусства, достигнет критической
+        точки, и кто-то сможет изменить весь рынок. Белый рынок делает искусство
+        более цивилизованным и прозрачным, соответствующим правилам и моральным
+        принципам.
+        <span class="dB">Денис Башев</span>
+      </p>
+
+      <p class="maxText">
+        В какой-то момент количество людей, кто хочет белого рынка, перевалит
+        критическую точку. Кто станет тем самым человеком или группой, кому
+        удастся сдвинуть в сторону весь рынок, никто не знает, но это не значит,
+        что не надо совершать попытки. Рынок становится цивилизованнее, когда
+        все в черную — рынок деградирует, люди не обсуждают искусство публично,
+        не знают, что происходит внутри. А белый рынок понятный, там есть
+        правила игры, которые соответствуют времени, законам, развития общества,
+        моральными принципами. Это интересно.
+        <span class="dB">Денис Башев</span>
+      </p>
+      <button class="show active">читать подробнее</button>
+      <button class="hide">Скрыть</button>
+    </div>
+  </div>
+
+  <div class="isWay__picture button-container">
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+    <!-- image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redked 9.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redked 9(1).webp"
+      alt="redked"
+    />
+
+    <!-- image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 9.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 9(1).webp"
+      alt="redked"
+    />
+
+    <!-- image mobile -->
+    <img
+      class="img_plus_mobile"
+      id="img_plus_mobile"
+      src="img\mobile\redked\redked 9.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      id="img_minus_mobile"
+      src="img\mobile\redked\redked 9(1).webp"
+      alt="redked"
+    />
+    <div class="avtograf">Ди</div>
+  </div>
+  <div class="isWay__content6">
+    Хочется чтобы проект стал вехой, чтобы он продолжался.
+    <br class="divider" />
+    <span class="avtograf">Human Code</span>
+  </div>
+  <div class="isWay__picture2 button-container">
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+    <!-- image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redked 7.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redked 7(1).webp"
+      alt="redked"
+    />
+
+    <!-- image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 7.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 7(1).webp"
+      alt="redked"
+    />
+
+    <!-- image mobile -->
+    <img
+      class="img_plus_mobile"
+      id="img_plus_mobile"
+      src="img\mobile\redked\redked 7.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      id="img_minus_mobile"
+      src="img\mobile\redked\redked 7(1).webp"
+      alt="redked"
+    />
+    <div class="avtograf">Human code</div>
+  </div>
+</section>
+
+    <section class="redkedsHarisma container">
+  <div class="redkedsHarisma__content"></div>
+  <div class="redkedsHarisma__content2">
+    <img
+      class="redkedsHarisma__content2__picture"
+      src="img/desctop/bg/bg5-1.png"
+      alt="redked hane"
+    />
+    <p class="redkedsHarisma__content2__text">
+      <span>REDKEDS CHARISMA</span> — агентство медиахудожников, дизайнеров,
+      креативных директоров и авторов визуальных искусств, представляющее на
+      эксклюзиве интересы талантливых авторов. Это микрокосмос творческих умов,
+      трудолюбивых, командных игроков, активистов, неисправимых идеалистов,
+      мечтателей и реалистов, волков-одиночек. В динамичном нестабильном
+      креативном мире CHARISMA станет преданным партнером в воплощении проектов
+      в жизнь.
+    </p>
+  </div>
+  <div class="redkedsHarisma__picture button-container">
+    <svg class="plus" role="button" id="buttonPlus">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minus" role="button" id="buttonMinus">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+<!-- button mobile -->
+
+<svg class="plusM active" role="button">
+  <use xlink:href="img/sprites/sprite.svg#addBlackCircle"></use>
+</svg>
+
+<svg class="minusM" role="button" id="buttonMinusM">
+  <use xlink:href="img/sprites/sprite.svg#removeBlackCircle"></use>
+</svg>
+
+    <!-- image desctop -->
+    <img
+      class="img_plus_desctop"
+      src="img\desctop\redked\redkeds 10.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_desctop"
+      src="img\desctop\redked\redkeds 10(1).webp"
+      alt="redked"
+    />
+
+    <!-- image tablet -->
+    <img
+      class="img_plus_tablet"
+      src="img\tablet\redked\redked 10.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_tablet"
+      src="img\tablet\redked\redked 10(1).webp"
+      alt="redked"
+    />
+
+    <!-- image mobile -->
+    <img
+      class="img_plus_mobile"
+      id="img_plus_mobile"
+      src="img\mobile\redked\redked 10.webp"
+      alt="redked"
+    />
+    <img
+      class="img_minus_mobile"
+      id="img_minus_mobile"
+      src="img\mobile\redked\redked 10(1).webp"
+      alt="redked"
+    />
+    <div class="avtograf">REDKEDS CHARISMA</div>
+  </div>
+
+  <div class="redkedsHarisma__content3">
+    <a href="#" class="redkedsHarisma__content3__link"
+      ><svg
+        class="redkedsHarisma__content3__link__plus"
+        role="button"
+        id="buttonPlus"
+      >
+        <use xlink:href="img/sprites/sprite.svg#add-plus"></use></svg
+    ></a>
+    <div class="redkedsHarisma__content3__text">ПРИСОЕДИНЯЙТЕСЬ К ПРОЕКТУ</div>
+  </div>
+</section>
+
+    <div class="footer container">
+  <div class="footer__red">
+    <div class="footer__red__wrp">
+      <h1 class="footer__red__wrp__title">ПАРТНЁРЫ</h1>
+      <div class="footer__red__wrp__bg"></div>
+    </div>
+
+    <nav class="footer__red__partners">
+      <ul>
+        <li><img src="/img/desctop/logo/REDKEDS.png" alt="REDKEDS" /></li>
+        <li><img src="/img/desctop/logo/human code.png" alt="human code" /></li>
+        <li><img src="/img/desctop/logo/cosmoscow.png" alt="cosmoscow" /></li>
+        <li>
+          <img
+            src="/img/desctop/logo/my invest art 1.png"
+            alt="my invest art"
+          />
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="footer__black">
+    <div class="footer__black__credits">
+      Текст: Никита Гаркуша, Анастасия Оголева Иллюстрации: Юлия Москалева
+      Дизайн: Яна Нагаева, Меллат Тулешова Верстка:
+    </div>
+    <nav class="footer__black__socials">
+      <ul>
+        <li>
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#vk"></use>
+          </svg>
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#instagram"></use>
+          </svg>
+        </li>
+        <li>
+          <svg>
+            <use xlink:href="img/sprites/sprite.svg#telegram"></use>
+          </svg>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
