@@ -2,23 +2,25 @@
   &__red {
     display: flex;
     flex-direction: column;
+    gap: 60px;
     height: 500px;
     padding-left: 60px;
-    padding-top: 147px;
+    padding-top: 120px;
     background-color: $bg-color-secondary;
     &__wrp {
       display: flex;
       &__title {
+        display: flex;
         width: 304px;
-
+        align-items: center;
         font-size: 44px;
       }
       &__bg {
         height: 148px;
         width: 100%;
         z-index: 2;
-        background: url(../../../img/desctop/bg/bg5-2.png) no-repeat;
-        background-position: top -45px left 60px;
+        background: url(../img/desctop/bg/bg5-2.webp) no-repeat;
+        background-position: top 0px left 60px;
       }
     }
 

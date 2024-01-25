@@ -1,6 +1,6 @@
 @media (max-width: 768px) {
   .problemsArt {
-    background: url(../../../img/tablet/bg/bg3.png) no-repeat;
+    background: url(../img/tablet/bg/bg3.webp) no-repeat;
     background-position: top 107px left 0px;
     &__title {
       width: 700px;
@@ -22,7 +22,7 @@
       margin-left: 435px;
       margin-top: -40px;
       width: 320px;
-      background: url(../../../img/tablet/bg/bg3-1.png) no-repeat;
+      background: url(../img/tablet/bg/bg3-1.webp) no-repeat;
       background-position: top 0px left 0px;
       &__item1,
       &__item2,
@@ -173,7 +173,7 @@
 }
 @media (max-width: 375px) {
   .problemsArt {
-    background: url(../../../img/mobile/bg/bg6.png) no-repeat;
+    background: url(../img/mobile/bg/bg6.webp) no-repeat;
     background-position: top 0px left 0px;
     padding-top: 0;
     margin-top: -35px;
@@ -196,7 +196,7 @@
       padding-top: 65px;
       margin-left: 0px;
       width: 300px;
-      background: url(../../../img/mobile/bg/bg6-1.png) no-repeat;
+      background: url(../img/mobile/bg/bg6-1.webp) no-repeat;
       background-position: top 27px left 21px;
 
       &__item1,
@@ -208,14 +208,14 @@
       }
       &__item1 {
         margin-bottom: 15px;
-        background: url(../../../img/mobile/bg/bg6-1-1.png) no-repeat;
+        background: url(../img/mobile/bg/bg6-1-1.webp) no-repeat;
         background-position: top 0px left 8px;
       }
       &__item2 {
         margin-bottom: 10px;
       }
       &__item3 {
-        background: url(../../../img/mobile/bg/bg6-1-2.png) no-repeat;
+        background: url(../img/mobile/bg/bg6-1-2.webp) no-repeat;
         background-position: top 5px left 50px;
         .divider {
           display: block;
@@ -345,9 +345,8 @@
           padding-left: 24px;
           padding-right: 19px;
           line-height: 123%;
-          background: url(../../../img/mobile/bg/bg8.png) no-repeat top 2px left
-              0px,
-            url(../../../img/mobile/bg/bg8-1.png) no-repeat top 368px left 0px;
+          background: url(../img/mobile/bg/bg8.webp) no-repeat top 2px left 0px,
+            url(../img/mobile/bg/bg8-1.webp) no-repeat top 368px left 0px;
         }
 
         .maxText {
@@ -357,9 +356,8 @@
           padding-right: 0px;
           line-height: 122%;
           display: none;
-          background: url(../../../img/mobile/bg/bg7.png) no-repeat top 0px left
-              0px,
-            url(../../../img/mobile/bg/bg7-1.png) no-repeat top 743px left 0px;
+          background: url(../img/mobile/bg/bg7.webp) no-repeat top 0px left 0px,
+            url(../img/mobile/bg/bg7-1.webp) no-repeat top 743px left 0px;
         }
 
         .show,

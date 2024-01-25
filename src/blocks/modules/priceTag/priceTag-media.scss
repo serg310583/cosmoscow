@@ -23,7 +23,7 @@
       &__left {
         width: 340px;
         .priceTag_text {
-          background: url(../../../img/tablet/bg/bg2.png) no-repeat;
+          background: url(../img/tablet/bg/bg2.webp) no-repeat;
           background-position: bottom -7px right 9px;
           font-size: 16px;
 
@@ -38,7 +38,7 @@
         right: 0px;
         width: 335px;
         padding-left: 86px;
-        background: url(../../../img/tablet/bg/bg2-1.png) no-repeat;
+        background: url(../img/tablet/bg/bg2-1.webp) no-repeat;
         background-position: top -20px left 60px;
         &__wrapper {
           width: 200px;
@@ -91,7 +91,7 @@
         font-size: 18px;
         padding-left: 12px;
         padding-right: 12px;
-        background: url(../../../img/tablet/bg/bg2-2.png) no-repeat;
+        background: url(../img/tablet/bg/bg2-2.webp) no-repeat;
         background-position: top 170px left 3px;
       }
       &__text3 {
@@ -100,7 +100,7 @@
         padding-left: 22px;
         padding-right: 22px;
         margin-bottom: 183px;
-        background: url(../../../img/tablet/bg/bg2-3.png) no-repeat;
+        background: url(../img/tablet/bg/bg2-3.webp) no-repeat;
         background-position: top 237px left 0px;
         .divider {
           display: block;
@@ -194,7 +194,7 @@
           font-size: 14px;
           display: inline-block;
           font-style: italic;
-          background: url(../../../img/mobile/bg/bg2.png) no-repeat;
+          background: url(../img/mobile/bg/bg2.webp) no-repeat;
           background-position: top 35px left 0px;
           span {
             color: $text-color-light;
@@ -207,7 +207,7 @@
         padding-left: 28px;
         top: -58px;
         width: 343px;
-        background: url(../../../img/mobile/bg/bg2-1.png) no-repeat;
+        background: url(../img/mobile/bg/bg2-1.webp) no-repeat;
         background-position: top -33px left 12px;
         &__wrapper {
           display: flex;
@@ -299,7 +299,7 @@
           }
         }
         .minText {
-          background: url(../../../img/mobile/bg/bg3.png) no-repeat;
+          background: url(../img/mobile/bg/bg3.webp) no-repeat;
           background-position: top 47px left -2px;
         }
 
@@ -308,7 +308,7 @@
           padding-left: 18px;
           padding-right: 18px;
           display: none;
-          background: url(../../../img/mobile/bg/bg4.png) no-repeat;
+          background: url(../img/mobile/bg/bg4.webp) no-repeat;
           background-position: top 348px left 2px;
         }
 
@@ -354,9 +354,9 @@
           }
         }
         .minText {
-          background: url(../../../img/mobile/bg/bg5-1.png) no-repeat top 221px
-              left 0px,
-            url(../../../img/mobile/bg/bg5-2.png) no-repeat top 328px left 0px;
+          background: url(../img/mobile/bg/bg5-1.webp) no-repeat top 221px left
+              0px,
+            url(../img/mobile/bg/bg5-2.webp) no-repeat top 328px left 0px;
         }
 
         .maxText {
@@ -364,9 +364,9 @@
           padding-left: 9px;
           padding-right: 0px;
           display: none;
-          background: url(../../../img/mobile/bg/bg5-3.png) no-repeat top 453px
-              left 9px,
-            url(../../../img/mobile/bg/bg5-4.png) no-repeat top 576px left 0px;
+          background: url(../img/mobile/bg/bg5-3.webp) no-repeat top 453px left
+              9px,
+            url(../img/mobile/bg/bg5-4.webp) no-repeat top 576px left 0px;
           .text_bg {
             color: $text-color-light;
           }
