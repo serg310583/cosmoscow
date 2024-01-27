@@ -36,24 +36,15 @@
       top: 427px;
       left: 0px;
 
-      .avtograf {
-        top: 23px;
-        left: 300px;
-      }
       .img_plus_tablet,
       .img_minus_tablet {
-        position: absolute;
         top: 0px;
         left: 528px;
       }
       .minus,
       .plus {
-        position: absolute;
-        width: 80px;
-        height: 80px;
         top: 226px;
         left: 494px;
-        cursor: pointer;
       }
       .avtograf {
         top: 338px;
@@ -139,22 +130,19 @@
 
       .img_plus_mobile,
       .img_minus_mobile {
-        position: absolute;
         top: 0px;
         left: 0px;
-        z-index: 2;
       }
       .plusM,
       .minusM {
         top: 330px;
         left: 97px;
       }
-      @include button_mobile;
       .avtograf {
         top: 409px;
         left: 38px;
-        font-size: 14px;
       }
+      @include button_mobile;
     }
   }
 }

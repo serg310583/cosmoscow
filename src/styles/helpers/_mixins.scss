@@ -19,19 +19,29 @@
       }
     }
   }
-
+  .minus,
+  .plus {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    cursor: pointer;
+  }
   .plus {
     display: inline-block;
     z-index: 3;
+  }
+  .minus {
+    display: none;
+    z-index: 3;
+  }
+  .plusM,
+  .minusM {
+    display: none;
   }
   .img_plus_desctop {
     display: inline-block;
   }
 
-  .minus {
-    display: none;
-    z-index: 3;
-  }
   .img_minus_desctop {
     display: none;
   }
@@ -44,9 +54,21 @@
   .img_minus_mobile {
     display: none;
   }
+  .img_plus_tablet,
+  .img_minus_tablet {
+    position: absolute;
+    z-index: 2;
+  }
   .plusM,
   .minusM {
     display: none;
+  }
+  .minus,
+  .plus {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
   }
   .plus {
     &:hover {
@@ -65,6 +87,11 @@
   .img_plus_tablet {
     display: inline-block;
   }
+  .avtograf {
+    position: absolute;
+    font-size: 16px;
+    font-style: italic;
+  }
 }
 
 @mixin button_mobile {
@@ -77,6 +104,11 @@
   .img_plus_mobile {
     display: inline-block;
   }
+  .img_plus_mobile,
+  .img_minus_mobile {
+    position: absolute;
+    z-index: 2;
+  }
   .plus,
   .minus {
     display: none;
@@ -88,11 +120,35 @@
     width: 50px;
     height: 50px;
     position: absolute;
-    // top: 90px;
-    // right: 34px;
     cursor: pointer;
   }
   .active {
     display: block;
+  }
+  .avtograf {
+    position: absolute;
+    font-style: italic;
+    font-size: 14px;
+  }
+}
+//Кнопка вверх
+@mixin buttonTopDesc {
+  cursor: pointer;
+  svg {
+    fill: #ebebeb;
+    width: 60px;
+    height: 60px;
+  }
+}
+@mixin buttonTopTab {
+  svg {
+    width: 53px;
+    height: 53px;
+  }
+}
+@mixin buttonTopMob {
+  svg {
+    width: 30px;
+    height: 30px;
   }
 }

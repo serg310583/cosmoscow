@@ -7,8 +7,14 @@
       margin-left: 35px;
       font-size: 36px;
     }
-    .go-top {
+    &__btnUp {
+      position: absolute;
       z-index: 3;
+      top: 185px;
+      left: 290px;
+      @include buttonTopMob;
+    }
+    .go-top {
       top: 185px;
       right: 435px;
       svg {
@@ -57,7 +63,6 @@
     }
     &__content3 {
       margin-top: 634px;
-
       &__text {
         position: relative;
         font-family: 'Times New Roman';
@@ -91,32 +96,14 @@
     top: 160px;
     left: -160px;
     .avtograf {
-      position: absolute;
-      font-style: italic;
       top: -6px;
       left: 64px;
     }
-    .img_plus_desctop,
-    .img_minus_desctop {
-      position: absolute;
-      z-index: 2;
-      top: 0px;
-      left: -15px;
-      object-fit: cover;
-    }
-    .plusM,
-    .minusM {
-      display: none;
-    }
     .minus,
     .plus {
-      position: absolute;
-      width: 80px;
-      height: 80px;
       top: auto;
       bottom: -190px;
       left: 486px;
-      cursor: pointer;
     }
     @include button_tablet;
   }
@@ -129,19 +116,10 @@
       top: 23px;
       left: 300px;
     }
-    .img_plus_desctop,
-    .img_minus_desctop {
-      top: 0px;
-      left: -15px;
-    }
     .minus,
     .plus {
-      position: absolute;
-      width: 80px;
-      height: 80px;
       top: -40px;
       left: 445px;
-      cursor: pointer;
     }
     @include button_tablet;
   }
@@ -154,19 +132,10 @@
       top: 23px;
       left: 300px;
     }
-    .img_plus_desctop,
-    .img_minus_desctop {
-      top: 0px;
-      left: -15px;
-    }
     .minus,
     .plus {
-      position: absolute;
-      width: 80px;
-      height: 80px;
       top: 240px;
       left: 445px;
-      cursor: pointer;
     }
     @include button_tablet;
   }
@@ -182,15 +151,13 @@
       margin-left: 28px;
       font-size: 32px;
     }
-    .go-top {
-      top: 5px;
-      right: 30px;
-
-      svg {
-        width: 30px;
-        height: 30px;
-      }
+    &__btnUp {
+      position: absolute;
+      top: -7px;
+      left: 265px;
+      @include buttonTopMob;
     }
+
     &__content1 {
       padding-left: 25px;
       padding-top: 65px;
@@ -198,7 +165,6 @@
       width: 300px;
       background: url(../img/mobile/bg/bg6-1.webp) no-repeat;
       background-position: top 27px left 21px;
-
       &__item1,
       &__item2,
       &__item3 {
@@ -230,26 +196,20 @@
       height: 744px;
       top: 653px;
       left: 0px;
-      .avtograf {
-        position: absolute;
-        font-style: italic;
-        top: 386px;
-        left: 28px;
-        font-size: 14px;
-      }
       .img_plus_mobile,
       .img_minus_mobile {
-        position: absolute;
         top: 0px;
         left: 32px;
-        z-index: 2;
       }
       .plusM,
       .minusM {
         top: 237px;
         left: 46px;
       }
-
+      .avtograf {
+        top: 386px;
+        left: 28px;
+      }
       @include button_mobile;
     }
     &__content2 {
@@ -271,24 +231,20 @@
       height: 744px;
       top: 1360px;
       left: 0px;
-      .avtograf {
-        top: 300px;
-        left: 260px;
-        font-size: 14px;
-      }
       .img_plus_mobile,
       .img_minus_mobile {
-        position: absolute;
         top: 0px;
         left: -44px;
-        z-index: 2;
       }
       .plusM,
       .minusM {
         top: -45px;
         left: 300px;
       }
-
+      .avtograf {
+        top: 300px;
+        left: 260px;
+      }
       @include button_mobile;
     }
     .problemsArt__picture3 {
@@ -297,30 +253,25 @@
       height: 283px;
       top: 1604px;
       left: 0px;
-      .avtograf {
-        top: 300px;
-        left: 260px;
-        font-size: 14px;
-      }
       .img_plus_mobile,
       .img_minus_mobile {
-        position: absolute;
         top: 0px;
         left: -235px;
-        z-index: 2;
       }
       .plusM,
       .minusM {
         top: 104px;
         left: 136px;
       }
-
+      .avtograf {
+        top: 300px;
+        left: 260px;
+      }
       @include button_mobile;
     }
     &__content3 {
       display: none;
     }
-
     &__content3Mobile {
       display: block;
       margin-top: 505px;
@@ -348,7 +299,6 @@
           background: url(../img/mobile/bg/bg8.webp) no-repeat top 2px left 0px,
             url(../img/mobile/bg/bg8-1.webp) no-repeat top 368px left 0px;
         }
-
         .maxText {
           width: 228px;
           padding-top: 43px;
@@ -359,7 +309,6 @@
           background: url(../img/mobile/bg/bg7.webp) no-repeat top 0px left 0px,
             url(../img/mobile/bg/bg7-1.webp) no-repeat top 743px left 0px;
         }
-
         .show,
         .hide {
           align-self: flex-end;

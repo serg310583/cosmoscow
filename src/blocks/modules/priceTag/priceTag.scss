@@ -5,25 +5,25 @@
   padding-left: 60px;
   &__title {
     font-size: 44px;
-    padding-bottom: 24px;
+    padding-bottom: 35px;
   }
-  .go-top {
+  &__btnUp {
     position: absolute;
     top: 204px;
     right: 181px;
-    svg {
-      fill: #ebebeb;
-      width: 60px;
-      height: 60px;
-    }
+    @include buttonTopDesc;
   }
   &__content {
     display: flex;
 
     &__left {
-      width: 500px;
+      width: 510px;
+      margin-left: -5px;
+
       .priceTag_text {
         background: url(../img/desctop/bg/bg2.webp) no-repeat;
+        padding-right: 5px;
+        padding-left: 5px;
         background-position: bottom -7px right -7px;
         font-size: 18px;
         font-style: italic;
@@ -39,7 +39,7 @@
       width: 700px;
       padding-left: 200px;
       background: url(../img/desctop/bg/bg2-1.webp) no-repeat;
-      background-position: top -70px left 12px;
+      background-position: top -70px left 36px;
       &__wrapper {
         display: flex;
         flex-direction: column;
@@ -81,19 +81,10 @@
       left: -235px;
       object-fit: cover;
     }
-    .plusM,
-    .minusM {
-      display: none;
-    }
-
     .minus,
     .plus {
-      width: 100px;
-      height: 100px;
-      position: absolute;
       bottom: 120px;
       left: 440px;
-      cursor: pointer;
     }
     @include button;
   }
@@ -198,19 +189,10 @@
       left: 330px;
       object-fit: cover;
     }
-    .plusM,
-    .minusM {
-      display: none;
-    }
-
     .minus,
     .plus {
-      width: 100px;
-      height: 100px;
-      position: absolute;
       bottom: -80px;
       left: 410px;
-      cursor: pointer;
     }
     @include button;
     .avtograf {

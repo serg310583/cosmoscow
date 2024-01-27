@@ -8,14 +8,13 @@
           font-size: 36px;
           margin-bottom: 24px;
         }
-        .go-top {
+        &__btnUp {
+          position: absolute;
           top: 150px;
           right: 390px;
-          svg {
-            width: 53px;
-            height: 53px;
-          }
+          @include buttonTopTab;
         }
+
         &__text {
           width: 340px;
           font-size: 16px;
@@ -65,10 +64,6 @@
       height: 505px;
       top: 1147px;
       left: -321px;
-      .avtograf {
-        top: 23px;
-        left: 300px;
-      }
       .img_plus_desctop,
       .img_minus_desctop {
         top: 0px;
@@ -76,12 +71,8 @@
       }
       .minus,
       .plus {
-        position: absolute;
-        width: 80px;
-        height: 80px;
         top: -135px;
         left: 357px;
-        cursor: pointer;
       }
       .avtograf {
         top: 4px;
@@ -104,10 +95,6 @@
       height: 505px;
       top: 1334px;
       left: 0px;
-      .avtograf {
-        top: 23px;
-        left: 300px;
-      }
       .img_plus_tablet,
       .img_minus_tablet {
         position: absolute;
@@ -116,17 +103,12 @@
       }
       .minus,
       .plus {
-        position: absolute;
-        width: 80px;
-        height: 80px;
         top: 263px;
         left: 24px;
-        cursor: pointer;
       }
       .avtograf {
         top: 40px;
         left: 260px;
-        font-size: 16px;
       }
       @include button_tablet;
     }
@@ -143,14 +125,12 @@
           font-size: 32px;
           margin-bottom: 24px;
         }
-        .go-top {
+        &__btnUp {
+          position: absolute;
           top: 5px;
-          right: 30px;
-
-          svg {
-            width: 30px;
-            height: 30px;
-          }
+          right: auto;
+          left: 265px;
+          @include buttonTopMob;
         }
 
         &__text {
@@ -163,7 +143,6 @@
         top: 140px;
         left: 42px;
         width: 266px;
-
         height: 200px;
         z-index: 2;
         background: url(../img/mobile/bg/bg9.webp) no-repeat;
@@ -205,7 +184,6 @@
       display: block;
       display: flex;
       width: 300px;
-
       .article__container {
         width: 240px;
         padding-left: 0px;
@@ -243,7 +221,6 @@
         }
       }
     }
-
     &__content6 {
       margin-top: 84px;
       margin-left: 60px;
@@ -264,29 +241,21 @@
       height: 283px;
       top: 726px;
       left: 15px;
-      .avtograf {
-        top: 300px;
-        left: 260px;
-        font-size: 14px;
-      }
       .img_plus_mobile,
       .img_minus_mobile {
-        position: absolute;
         top: 0px;
         left: -235px;
-        z-index: 2;
       }
       .plusM,
       .minusM {
         top: 230px;
         left: 128px;
       }
-      @include button_mobile;
       .avtograf {
         top: 197px;
         left: 243px;
-        font-size: 14px;
       }
+      @include button_mobile;
     }
     .isWay__picture2 {
       overflow-x: clip;
@@ -299,22 +268,19 @@
 
       .img_plus_mobile,
       .img_minus_mobile {
-        position: absolute;
         top: 0px;
         left: 0px;
-        z-index: 2;
       }
       .plusM,
       .minusM {
         top: 282px;
         left: 75px;
       }
-      @include button_mobile;
       .avtograf {
         top: 347px;
         left: 274px;
-        font-size: 14px;
       }
+      @include button_mobile;
     }
   }
 }

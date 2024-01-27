@@ -14,27 +14,27 @@ document
     }
   });
 // ФУНКЦИОНАЛ ПРОКРУТКИ ВВЕРХ
-const goTopBtns = document.querySelectorAll('.go-top');
-goTopBtns.forEach((btn) => {
-  btn.addEventListener('click', goTop);
-});
+// const goTopBtns = document.querySelectorAll('.go-top');
+// goTopBtns.forEach((btn) => {
+//   btn.addEventListener('click', goTop);
+// });
 
-function trackScroll() {
-  const scrolled = window.scrollY;
-  const coords = document.documentElement.clientHeight;
-  if (scrolled > coords) {
-    goTopBtn.classList.add('go-top--show');
-  } else {
-    goTopBtn.classList.remove('go-top--show');
-  }
-}
+// function trackScroll() {
+//   const scrolled = window.scrollY;
+//   const coords = document.documentElement.clientHeight;
+//   if (scrolled > coords) {
+//     goTopBtn.classList.add('go-top--show');
+//   } else {
+//     goTopBtn.classList.remove('go-top--show');
+//   }
+// }
 
-function goTop() {
-  if (window.scrollY > 0) {
-    window.scrollBy(0, -55);
-    setTimeout(goTop, 0);
-  }
-}
+// function goTop() {
+//   if (window.scrollY > 0) {
+//     window.scrollBy(0, -55);
+//     setTimeout(goTop, 0);
+//   }
+// }
 
 // ФУНКЦИОНАЛ КНОПОК ПЛЮС И МИНУС ДЛЯ РАЗРЕШЕНИЯ 375PX
 // Находим все блоки с классом "button-container"

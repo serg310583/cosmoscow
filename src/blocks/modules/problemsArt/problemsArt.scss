@@ -9,16 +9,13 @@
     width: 950px;
     margin-left: 60px;
   }
-  .go-top {
+  &__btnUp {
     position: absolute;
     top: 155px;
-    right: 600px;
-    svg {
-      fill: #ebebeb;
-      width: 60px;
-      height: 60px;
-    }
+    left: 630px;
+    @include buttonTopDesc;
   }
+
   &__content1 {
     padding-left: 67px;
     padding-top: 130px;
@@ -115,18 +112,10 @@
     left: -15px;
     object-fit: cover;
   }
-  .plusM,
-  .minusM {
-    display: none;
-  }
   .minus,
   .plus {
-    width: 100px;
-    height: 100px;
-    position: absolute;
     top: 50px;
     left: 110px;
-    cursor: pointer;
   }
   @include button;
 }
@@ -152,18 +141,10 @@
     right: -200px;
     object-fit: cover;
   }
-  .plusM,
-  .minusM {
-    display: none;
-  }
   .minus,
   .plus {
-    width: 100px;
-    height: 100px;
-    position: absolute;
     top: 380px;
     left: 0px;
-    cursor: pointer;
   }
   @include button;
 }
@@ -183,19 +164,11 @@
     left: -270px;
     object-fit: cover;
   }
-  .plusM,
-  .minusM {
-    display: none;
-  }
   .minus,
   .plus {
-    width: 100px;
-    height: 100px;
-    position: absolute;
     top: 40px;
     left: 140px;
     z-index: 3;
-    cursor: pointer;
   }
   @include button;
 }
