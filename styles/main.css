@@ -1358,7 +1358,7 @@ a {
 
 .isWay__content__wrapper__btnUp {
   position: absolute;
-  top: 200px;
+  top: 0px;
   left: 415px;
   cursor: pointer;
 }
