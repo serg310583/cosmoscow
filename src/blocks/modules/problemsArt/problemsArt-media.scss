@@ -1,7 +1,8 @@
 @media (max-width: 768px) {
   .problemsArt {
+    padding-top: 130px;
     background: url(../img/tablet/bg/bg3.webp) no-repeat;
-    background-position: top 107px left 0px;
+    background-position: top 134px left 0px;
     &__title {
       width: 700px;
       margin-left: 35px;
@@ -38,7 +39,7 @@
         font-size: 16px;
       }
       &__item1 {
-        margin-bottom: 83px;
+        margin-bottom: 77px;
         background: none;
       }
       &__item2 {
@@ -91,26 +92,26 @@
     overflow-x: clip;
     position: absolute;
     z-index: 1;
-    width: 568px;
+    width: 585px;
     height: 744px;
-    top: 160px;
+    top: 188px;
     left: -160px;
     .avtograf {
-      top: -6px;
-      left: 64px;
+      top: 107px;
+      left: 194px;
     }
     .minus,
     .plus {
       top: auto;
-      bottom: -190px;
-      left: 486px;
+      bottom: -187px;
+      left: 496px;
     }
     @include button_tablet;
   }
   .problemsArt__picture2 {
     width: 568px;
     height: 744px;
-    top: 1400px;
+    top: 1426px;
     left: 160px;
     .avtograf {
       top: 23px;
@@ -124,9 +125,9 @@
     @include button_tablet;
   }
   .problemsArt__picture3 {
-    width: 524px;
+    width: 530px;
     height: 505px;
-    top: 1630px;
+    top: 1657px;
     left: -265px;
     .avtograf {
       top: 23px;

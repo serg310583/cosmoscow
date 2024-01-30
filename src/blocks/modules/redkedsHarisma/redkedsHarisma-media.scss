@@ -1,12 +1,12 @@
 @media (max-width: 768px) {
   .redkedsHarisma {
-    margin-top: 200px;
+    margin-top: 0px;
     width: 768px;
-    height: 1150px;
+    height: 1090px;
     &__content {
       height: 200px;
       background: url(../img/tablet/bg/bg5.webp) no-repeat;
-      background-position: top 145px left 100px;
+      background-position: top 145px left 0px;
     }
     &__content2 {
       top: 205px;
@@ -24,16 +24,15 @@
         margin-left: 430px;
         width: 335px;
         background: url(../img/tablet/bg/bg5-3.webp) no-repeat;
-        background-position: top -5px left -5px;
+        background-position: top 5px left -5px;
         height: 226px;
         font-size: 18px;
-        line-height: 132%;
       }
     }
     .redkedsHarisma__picture {
       width: 768px;
       height: 505px;
-      top: 427px;
+      top: 432px;
       left: 0px;
 
       .img_plus_tablet,
@@ -43,7 +42,7 @@
       }
       .minus,
       .plus {
-        top: 226px;
+        top: 231px;
         left: 494px;
       }
       .avtograf {
@@ -53,7 +52,7 @@
       @include button_tablet;
     }
     &__content3 {
-      margin-top: 972px;
+      margin-top: 980px;
       width: 394px;
       &__link {
         margin-bottom: 28px;

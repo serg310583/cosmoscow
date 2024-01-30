@@ -4,7 +4,6 @@
     padding-top: 160px;
     padding-left: 34px;
     padding-right: 34px;
-
     &__title {
       font-size: 36px;
       position: relative;
@@ -22,9 +21,10 @@
       &__left {
         width: 340px;
         .priceTag_text {
+          padding-bottom: 15px;
           background: url(../img/tablet/bg/bg2.webp) no-repeat;
-          background-position: bottom -7px right 9px;
-          font-size: 16px;
+          background-position: bottom 5px right 23px;
+          font-size: 15px;
 
           span {
             color: $text-color-light;
@@ -34,7 +34,7 @@
       &__right {
         position: absolute;
         top: -55px;
-        right: 0px;
+        right: 26px;
         width: 335px;
         padding-left: 86px;
         background: url(../img/tablet/bg/bg2-1.webp) no-repeat;
@@ -42,9 +42,14 @@
         &__wrapper {
           width: 200px;
           padding-top: 75px;
-          gap: 24px;
+          gap: 20px;
+          .autograf {
+            padding-top: 121px;
+            font-size: 16px;
+          }
           &__item {
             .item_number {
+              padding-bottom: 7px;
               font-size: 36px;
             }
             .item_text {
@@ -57,7 +62,7 @@
     .priceTag_picture {
       overflow-x: clip;
       width: 768px;
-      top: 625px;
+      top: 658px;
       .img_plus_tablet,
       .img_minus_tablet {
         top: 0px;
@@ -66,13 +71,15 @@
       .minus,
       .plus {
         top: 671px;
-        left: 475px;
+        left: 469px;
       }
 
       @include button_tablet;
     }
     &__content2 {
-      margin-top: 830px;
+      margin-top: 870px;
+      padding-left: 110px;
+
       &__text {
         width: 480px;
         font-size: 18px;
@@ -82,6 +89,7 @@
       &__text2 {
         width: 502px;
         font-size: 18px;
+        margin-left: -13px;
         padding-left: 12px;
         padding-right: 12px;
         background: url(../img/tablet/bg/bg2-2.webp) no-repeat;
@@ -90,9 +98,10 @@
       &__text3 {
         width: 524px;
         font-size: 18px;
+        margin-left: -22px;
         padding-left: 22px;
         padding-right: 22px;
-        margin-bottom: 183px;
+        margin-bottom: 165px;
         background: url(../img/tablet/bg/bg2-3.webp) no-repeat;
         background-position: top 237px left 0px;
         .divider {
@@ -115,19 +124,19 @@
       display: none;
     }
     .priceTag_picture2 {
-      top: 2373px;
+      top: 2400px;
       left: 0px;
       width: 768px;
       .img_plus_tablet,
       .img_minus_tablet {
         top: 0px;
-        left: 235px;
+        left: 255px;
       }
 
       .minus,
       .plus {
-        top: 625px;
-        left: 260px;
+        top: 620px;
+        left: 255px;
       }
 
       @include button_tablet;

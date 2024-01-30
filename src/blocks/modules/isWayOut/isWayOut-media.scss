@@ -1,27 +1,29 @@
 @media (max-width: 768px) {
   .isWay {
-    padding-top: 150px;
+    padding-top: 145px;
     padding-left: 35px;
     &__content {
       &__wrapper {
         &__title {
           font-size: 36px;
-          margin-bottom: 24px;
+          margin-bottom: 34px;
         }
         &__btnUp {
           position: absolute;
-          top: 150px;
-          right: 390px;
+          top: 0px;
+          right: auto;
+          left: 293px;
           @include buttonTopTab;
         }
 
         &__text {
-          width: 340px;
+          width: 310px;
           font-size: 16px;
         }
       }
       &__grey {
         width: 47.3%;
+        margin-left: 72px;
         height: 322.217px;
         z-index: 1;
         background: url(../img/tablet/bg/bg4.webp) no-repeat;
@@ -45,8 +47,8 @@
       }
     }
     &__content4 {
-      top: 440px;
-      left: 0px;
+      top: 430px;
+      left: 2px;
       width: 91px;
       height: 189px;
       background: url(../img/tablet/bg/bg4-1.webp) no-repeat;
@@ -71,20 +73,19 @@
       }
       .minus,
       .plus {
-        top: -135px;
+        top: -140px;
         left: 357px;
       }
       .avtograf {
-        top: 4px;
+        top: 1px;
         left: 353px;
       }
       @include button_tablet;
     }
     &__content6 {
-      font-size: 18px;
       width: 380px;
       height: 350px;
-      font-size: 20px;
+      font-size: 18px;
       .avtograf {
         font-style: italic;
       }
@@ -103,12 +104,12 @@
       }
       .minus,
       .plus {
-        top: 263px;
-        left: 24px;
+        top: 258px;
+        left: 224px;
       }
       .avtograf {
-        top: 40px;
-        left: 260px;
+        top: 36px;
+        left: 460px;
       }
       @include button_tablet;
     }
