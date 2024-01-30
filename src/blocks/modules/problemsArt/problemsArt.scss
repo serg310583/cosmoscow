@@ -11,14 +11,14 @@
   }
   &__btnUp {
     position: absolute;
-    top: 155px;
+    top: 150px;
     left: 630px;
     @include buttonTopDesc;
   }
 
   &__content1 {
-    padding-left: 67px;
-    padding-top: 130px;
+    padding-left: 61px;
+    padding-top: 121px;
     width: 382px;
     height: 939px;
     margin-left: 700px;
@@ -40,12 +40,12 @@
 
     &__item1 {
       display: flex;
-      margin-bottom: 20px;
+      margin-bottom: 35px;
       align-items: center;
       text-align: center;
-      background: url(../img/desctop/bg/bg3-1-1.webp) no-repeat top 10px left
-          10px,
-        url(../img/desctop/bg/bg3-1-2.webp) no-repeat top 10px left 10px;
+      background: url(../img/desctop/bg/bg3-1-1.webp) no-repeat top 12px left
+          13px,
+        url(../img/desctop/bg/bg3-1-2.webp) no-repeat top 20px left 0px;
     }
     &__item2 {
       margin-bottom: 20px;
@@ -97,12 +97,13 @@
   z-index: 1;
   width: 1000px;
   height: 925px;
-  top: 250px;
+  top: 281px;
   .avtograf {
     position: absolute;
     font-style: italic;
-    top: -6px;
-    left: 64px;
+    font-size: 18px;
+    top: -37px;
+    left: 58px;
   }
   .img_plus_desctop,
   .img_minus_desctop {
@@ -114,7 +115,7 @@
   }
   .minus,
   .plus {
-    top: 50px;
+    top: 43px;
     left: 110px;
   }
   @include button;
@@ -123,28 +124,28 @@
   overflow-x: clip;
   position: absolute;
   z-index: 1;
-  width: 570px;
+  width: 820px;
   height: 720px;
-  top: 1085px;
-  right: 0px;
+  top: 1088px;
+  right: -200px;
   .avtograf {
     position: absolute;
     font-style: italic;
-    bottom: 130px;
-    left: 720px;
+    font-size: 18px;
+    bottom: 145px;
+    left: 100px;
   }
   .img_plus_desctop,
   .img_minus_desctop {
     position: absolute;
     z-index: 2;
     top: 0px;
-    right: -200px;
-    object-fit: cover;
+    right: 0px;
   }
   .minus,
   .plus {
-    top: 380px;
-    left: 0px;
+    top: 384px;
+    left: 17px;
   }
   @include button;
 }
@@ -166,8 +167,8 @@
   }
   .minus,
   .plus {
-    top: 40px;
-    left: 140px;
+    top: 25px;
+    left: 143px;
     z-index: 3;
   }
   @include button;

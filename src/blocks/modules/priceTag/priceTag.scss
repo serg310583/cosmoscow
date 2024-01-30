@@ -1,5 +1,5 @@
 .priceTag {
-  min-height: 3450px;
+  min-height: 3489px;
   position: relative;
   padding-top: 203px;
   padding-left: 60px;
@@ -37,7 +37,7 @@
     }
     &__right {
       width: 700px;
-      padding-left: 200px;
+      padding-left: 195px;
       background: url(../img/desctop/bg/bg2-1.webp) no-repeat;
       background-position: top -70px left 36px;
       &__wrapper {
@@ -46,9 +46,10 @@
 
         padding-top: 96px;
         width: 255px;
-        gap: 36px;
+        gap: 37px;
         &__item {
           .item_number {
+            padding-bottom: 8px;
             span {
               font-size: 12px;
             }
@@ -59,7 +60,7 @@
           }
         }
         .autograf {
-          padding-top: 334px;
+          padding-top: 300px;
           font-size: 18px;
           font-style: italic;
         }
@@ -71,20 +72,20 @@
     z-index: 1;
     width: 1280px;
     height: 796px;
-    top: 900px;
+    top: 635px;
     left: 0px;
     .img_plus_desctop,
     .img_minus_desctop {
       position: absolute;
       z-index: 2;
-      top: -285px;
-      left: -235px;
+      top: 0px;
+      left: -204px;
       object-fit: cover;
     }
     .minus,
     .plus {
-      bottom: 120px;
-      left: 440px;
+      bottom: -160px;
+      left: 465px;
     }
     @include button;
   }
@@ -97,9 +98,8 @@
   &__content2 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 300px;
-    align-items: center;
+    margin-top: 322px;
+    padding-left: 286px;
     background: url(../img/desctop/bg/bg2-2.webp) no-repeat;
     background-position: top 123px left 716px;
 
@@ -179,7 +179,7 @@
     z-index: 1;
     width: 1280px;
     height: 796px;
-    top: 2300px;
+    top: 2367px;
     left: 0px;
     .img_plus_desctop,
     .img_minus_desctop {
@@ -199,7 +199,7 @@
       position: absolute;
       font-size: 18px;
       font-style: italic;
-      top: 355px;
+      top: 328px;
       left: 760px;
     }
   }

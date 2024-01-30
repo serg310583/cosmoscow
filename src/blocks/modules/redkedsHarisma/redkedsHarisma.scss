@@ -24,10 +24,12 @@
       left: 0px;
     }
     &__text {
-      margin-top: 111px;
+      padding-top: 10px;
+      padding-left: 5px;
+      margin-top: 101px;
       margin-left: 671px;
       background: url(../img/desctop/bg/bg5-3.webp) no-repeat;
-      background-position: top -5px left -5px;
+      background-position: top 5px left -5px;
       span {
         text-transform: uppercase;
         color: $text-color-light;
