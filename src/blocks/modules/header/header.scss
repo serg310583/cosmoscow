@@ -2,8 +2,10 @@
   display: flex;
   height: 100px;
   padding-left: 60px;
+  padding-right: 60px;
   align-items: center;
   &__hamburger {
+    display: none;
     cursor: pointer;
     outline: none;
     svg {
@@ -12,15 +14,17 @@
     }
   }
   &__menu {
-    display: none;
+    display: flex;
+    width: 100%;
+    // justify-content: space-between;
     background: inherit;
     z-index: 3;
     .items {
-      padding-left: 20px;
       display: flex;
       justify-content: space-between;
-      width: 1110px;
+      width: 100%;
       .item {
+        display: block;
         a {
           cursor: pointer;
           color: $text-color-secondary;

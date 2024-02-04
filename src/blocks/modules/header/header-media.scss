@@ -1,13 +1,9 @@
-@media (max-width: 768px) {
+@media (max-width: 1199.98px) {
   .header {
-    padding-left: 34px;
-
+    padding-right: 45px;
+    padding-left: 45px;
     &__menu {
       .items {
-        padding-left: 20px;
-        flex-direction: column;
-        gap: 15px;
-        width: 694px;
         .item {
           a {
             font-size: 16px;
@@ -17,23 +13,29 @@
     }
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 991.98px) {
   .header {
-    height: 40px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    &__hamburger {
+      display: block;
+    }
 
     &__menu {
+      display: none;
+      height: 100px;
       .items {
-        padding-left: 0px;
         flex-direction: column;
-        gap: 10px;
-        width: 310px;
         .item {
           a {
-            font-size: 12px;
+            font-size: 14px;
           }
         }
       }
     }
   }
+}
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
 }
