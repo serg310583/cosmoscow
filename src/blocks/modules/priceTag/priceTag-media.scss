@@ -152,7 +152,7 @@
   .priceTag {
     // height: auto;
     width: 375px;
-    min-height: 2866px;
+    min-height: 2816px;
     padding-top: 97px;
     padding-left: 0px;
     padding-right: 22px;
@@ -429,26 +429,31 @@
         }
       }
     }
-    .priceTag_picture2 {
-      position: absolute;
-      overflow-x: clip;
+    &__wrapForPicture2Mobile {
       width: 375px;
-      top: 2100px;
-      left: 0px;
-      .img_plus_mobile,
-      .img_minus_mobile {
-        top: 50px;
-        left: -120px;
+      height: 500px;
+      position: relative;
+      .priceTag_picture2 {
+        position: absolute;
+        overflow-x: clip;
+        top: -150px;
+        width: 375px;
+        left: 0px;
+        .img_plus_mobile,
+        .img_minus_mobile {
+          top: 50px;
+          left: -120px;
+        }
+        .plusM,
+        .minusM {
+          top: 200px;
+          right: 260px;
+        }
+        .active {
+          display: block;
+        }
+        @include button_mobile;
       }
-      .plusM,
-      .minusM {
-        top: 200px;
-        right: 260px;
-      }
-      .active {
-        display: block;
-      }
-      @include button_mobile;
     }
   }
 }
