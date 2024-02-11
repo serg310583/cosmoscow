@@ -3151,7 +3151,7 @@ a {
 
   .priceTag {
     width: 375px;
-    min-height: 2866px;
+    min-height: 2816px;
     padding-top: 97px;
     padding-left: 0px;
     padding-right: 22px;
@@ -3517,54 +3517,60 @@ a {
     display: block;
   }
 
-  .priceTag .priceTag_picture2 {
+  .priceTag__wrapForPicture2Mobile {
+    width: 375px;
+    height: 500px;
+    position: relative;
+  }
+
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 {
     position: absolute;
     overflow-x: clip;
+    top: -150px;
     width: 375px;
-    top: 2100px;
     left: 0px;
   }
 
-  .priceTag .priceTag_picture2 .img_plus_mobile,
-  .priceTag .priceTag_picture2 .img_minus_mobile {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_plus_mobile,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_minus_mobile {
     top: 50px;
     left: -120px;
   }
 
-  .priceTag .priceTag_picture2 .plusM,
-  .priceTag .priceTag_picture2 .minusM {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .plusM,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .minusM {
     top: 200px;
     right: 260px;
   }
 
-  .priceTag .priceTag_picture2 .active {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .active {
     display: block;
   }
 
-  .priceTag .priceTag_picture2 .img_minus_desctop,
-  .priceTag .priceTag_picture2 .img_plus_desctop,
-  .priceTag .priceTag_picture2 .img_plus_tablet,
-  .priceTag .priceTag_picture2 .img_minus_tablet {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_minus_desctop,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_plus_desctop,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_plus_tablet,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_minus_tablet {
     display: none;
   }
 
-  .priceTag .priceTag_picture2 .img_plus_mobile {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_plus_mobile {
     display: inline-block;
   }
 
-  .priceTag .priceTag_picture2 .img_plus_mobile,
-  .priceTag .priceTag_picture2 .img_minus_mobile {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_plus_mobile,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .img_minus_mobile {
     position: absolute;
     z-index: 2;
   }
 
-  .priceTag .priceTag_picture2 .plus,
-  .priceTag .priceTag_picture2 .minus {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .plus,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .minus {
     display: none;
   }
 
-  .priceTag .priceTag_picture2 .plusM,
-  .priceTag .priceTag_picture2 .minusM {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .plusM,
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .minusM {
     display: none;
     z-index: 9;
     width: 50px;
@@ -3573,11 +3579,11 @@ a {
     cursor: pointer;
   }
 
-  .priceTag .priceTag_picture2 .active {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .active {
     display: block;
   }
 
-  .priceTag .priceTag_picture2 .avtograf {
+  .priceTag__wrapForPicture2Mobile .priceTag_picture2 .avtograf {
     position: absolute;
     font-style: italic;
     font-size: 14px;
@@ -3587,7 +3593,7 @@ a {
     background: url(../img/mobile/bg/bg6.webp) no-repeat;
     background-position: top 0px left 0px;
     padding-top: 0;
-    margin-top: -35px;
+    margin-top: 50px;
   }
 
   .problemsArt__title {
