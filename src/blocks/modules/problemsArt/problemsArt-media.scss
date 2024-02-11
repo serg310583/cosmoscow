@@ -1,14 +1,4 @@
 @media (max-width: 1279.98px) {
-}
-@media (max-width: 1199.98px) {
-}
-@media (max-width: 991.98px) {
-}
-@media (max-width: 767.98px) {
-}
-@media (max-width: 575.98px) {
-}
-@media (max-width: 768px) {
   .problemsArt {
     padding-top: 130px;
     background: url(../img/tablet/bg/bg3.webp) no-repeat;
@@ -151,7 +141,7 @@
     @include button_tablet;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 767.98px) {
   .problemsArt {
     background: url(../img/mobile/bg/bg6.webp) no-repeat;
     background-position: top 0px left 0px;

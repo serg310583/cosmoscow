@@ -1,4 +1,4 @@
-@media (max-width: 1199.98px) {
+@media (max-width: 1279.98px) {
   .header {
     padding-right: 45px;
     padding-left: 45px;
@@ -13,14 +13,13 @@
     }
   }
 }
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .header {
     padding-left: 15px;
     padding-right: 15px;
     &__hamburger {
       display: block;
     }
-
     &__menu {
       display: none;
       height: 100px;
